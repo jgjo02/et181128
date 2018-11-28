@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html dir="ltr"lang="ko-KR" class="ie6 lte-ie9 lte-ie8 lte-ie7 lte-ie6"><![endif]-->
+<!--[if lte IE 7]><html dir="ltr"lang="ko-KR" class="ie7 lte-ie9 lte-ie8 lte-ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr"lang="ko-KR" class="ie8 lte-ie9 lte-ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr"lang="ko-KR" class="ie9 lte-ie9"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html dir="ltr" lang="ko-KR"><!--<![endif]-->
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="이지비즈"/>
+	<meta name="author" content="jun-doo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/board.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/global.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/mobile_global.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/mobile.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="commons/css/print.css" />
+
+	<script src="commons/js/jquery.js"></script>
+	<script src="commons/js/jquery-migrate-1.2.1.js"></script>
+	<script src="commons/js/jquery.cookie.js"></script>
+	<script src="commons/js/site.js"></script>
+	<script src="commons/js/jquery.cycle.2.js"></script>
+	<script src="commons/js/jquery.cycle.2.carousel.js"></script>
+	<script src="commons/js/jquery.cycle.2.swipe.js"></script>
+	<script src="commons/js/jquery.flexslider.js"></script>
+
+	<script src="commons/js/fakeselect.js"></script>
+    <!--[if lt IE 9]>
+        <script src="commons/js/html5shiv.js"></script>
+    <![endif]-->
+
+
+    <title>▦ 이지비즈</title>
+
+</head>
+<body id="subpage">
+	<!-- 헤더 디자인 -->
+	<header class="header">
+
+		<article class="skiptoContent">
+			<h2 class="hidden_word">바로가기 메뉴</h2>
+			<div>
+				<strong>바로가기 메뉴</strong>
+				<span class="skip_item01"><a href="#cont_sbj" onclick="document.getElementById('cont_sbj').tabIndex = -1;document.getElementById('cont_sbj').focus();jQuery('#cont_sbj').addClass('selected');return false;">본문내용 바로가기</a></span>
+				<span class="skip_item02"><a href="#gnb-go" onclick="document.getElementById('gnb-go').tabIndex = -1;document.getElementById('gnb-go').focus();return false;">메인메뉴 바로가기</a></span>
+			</div>
+		</article>
+		<script>gnb_nav();</script>
+
+
+		<article class="top-nav">
+			<h2 class="hidden_word">주요안내</h2>
+			<div class="top-nav__box">
+
+
+				<div class="top-nav__fav2">
+					<a href="#">HOME</a>
+					<a href="#">회원가입</a>
+					<a href="#">로그인</a>
+					<a href="#">사이트맵</a>
+					<!--
+					<span class="font-size-box">
+						<h3>FONT SIZE</h3>
+						<a href="#" class="font-size-item" onclick="js_font_plus();">
+							<img src="commons/images/global/font-plus.png" alt="폰트크기 키움" />
+						</a>
+						<span class="size-realtime s1">100%</span>
+						<span class="size-realtime s2">110%</span>
+						<span class="size-realtime s3">120%</span>
+						<span class="size-realtime s4">130%</span>
+						<span class="size-realtime s5">140%</span>
+						<a href="#" class="font-size-item" onclick="js_font_minus();">
+							<img src="commons/images/global/font-minus.png" alt="폰트크기 줄임" />
+						</a>
+					</span> -->
+
+				</div>
+
+				<article class="top-search">
+					<h2 class="hidden_word">검색</h2>
+					<div class="top-search__in">
+						<form name="searchForm" method="get" action="/cop/bbs/selectSearchTotalList.do" onsubmit="return checkSearch(this);" >
+							<label for="main_search2" class="hidden_word">검색어 입력</label>
+							<input type="search" name="searchKeyword" id="searchKeyword" placeholder="검색하세요" class="m_se_btn" value=""/>
+							<input type="image" src="commons/images/global/gnb-search-btn.jpg" alt="검색" />
+						</form>
+
+					</div>
+				</article>
+			</div><!--// top-nav__box -->
+
+		</article>
+
+		<div class="header__wrap">
+
+
+			<div class="header__wrap__h1">
+				<h1>
+					<a href="index.html" class="title-item"><img src="commons/images/global/title.png" alt="이지비즈" /></a>
+				</h1>
+			</div>
+
+			<div class="gnb nav-top" id="gnb-go">
+				<h2 class="hidden_word">메인메뉴</h2>
+				<ul class="gnb-ul float_wrap nav-menu">
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">사업신청</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>분류별지원사업</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>지역별지원사업</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사업지원안내</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">Egbiz 소개</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>Egbiz 소개</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>관련사이트</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사업공고등록안내</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">정보광장</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>새소식</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>공지사항</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>입찰정보</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>우수기업탐방</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>정보</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>해외 플랫폼 정보</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">이용안내</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>홈페이지 이용안내</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>회원가입안내</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>자주 묻는 질문</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사용자매뉴얼</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>질의응답</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">회원서비스</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>회원가입</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>로그인</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>아이디/비밀번호찾기</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>이용약관</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>개인정보보호방침</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>이메일무단수집거부</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사이트맵</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+
+
+
+				</ul>
+			</div>
+
+			<script>
+				gnb_type(); //메뉴 숫자 클래스 삽입
+				//sizeComp(); //좌우 패딩형 사이즈 조절
+			</script>
+		</div>
+
+
+
+		<!-- 모바일 메뉴 -->
+		<div class="mobile_top_nav">
+			<div class="mobile_icon">
+				<a href="#gnb_nav_mobile" class="m_open_btn mobile_on_off"><img src="commons/images/mobile/menu_open.png" alt="메뉴보기" /></a>
+				<!-- <a href="#" class="m_s_btn"><img src="commons/images/mobile/menu_search.png" alt="검색" /></a> -->
+			</div>
+			<div class="mobile_top_nav__in">
+				<nav id="gnb_nav_mobile">
+					<h2 class="hidden_word">menu</h2>
+					<ul class="gnb-ul float_wrap nav-menu">
+
+						<!-- 위의 메뉴와 똑같이. but, 최상단 a의 링크는 뺀다. -->
+						<li class="gnb-menu nav-item t_menu">
+								<a href="#">사업신청</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>분류별지원사업</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>지역별지원사업</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사업지원안내</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">Egbiz 소개</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>Egbiz 소개</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>관련사이트</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사업공고등록안내</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">정보광장</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>새소식</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>공지사항</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>입찰정보</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>우수기업탐방</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>정보</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>해외 플랫폼 정보</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">이용안내</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>홈페이지 이용안내</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>회원가입안내</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>자주 묻는 질문</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사용자매뉴얼</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>질의응답</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">회원서비스</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>회원가입</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>로그인</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>아이디/비밀번호찾기</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>이용약관</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>개인정보보호방침</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>이메일무단수집거부</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사이트맵</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+						<!-- -->
+
+
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<span class="mobile-close mobile_on_off"><a href="#">닫기</a></span>
+		<script>
+
+
+			mobile_menu();
+
+
+			function mobile_tc(){
+			$('#gnb_nav_mobile li.taphover').on("touchstart", function (e) {
+			    "use strict"; //satisfy the code inspectors
+			    var link = $(this); //preselect the link
+			    if (link.hasClass('selected')) {
+			        return true;
+			    } else {
+			        link.addClass("selected");
+			        $('#gnb_nav_mobile li.taphover').not(this).removeClass("selected");
+			        e.preventDefault();
+			        return false; //extra, and to make sure the function has consistent return points
+			    }
+			});
+			}
+
+
+			(function(window, document, $) {
+
+				})(window, document, jQuery);
+
+				if(navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
+
+				//   mobile_tc(); //모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+
+				}
+
+
+				function mainGnbMobile() {
+						var oldIndex = 0;
+						jQuery('.mobile_top_nav li.gnb-menu').click(function() {
+							var thisIndex = jQuery('.mobile_top_nav li.gnb-menu').index(this);
+
+							jQuery('.mobile_top_nav div.sub-nav').removeClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').removeClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').removeClass('on');
+
+							jQuery('.mobile_top_nav div.sub-nav').eq(thisIndex).addClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').eq(thisIndex).addClass('selected');
+
+							//return false;
+						});
+
+
+				};
+
+				mainGnbMobile();
+
+		</script>
+		<p class="resol">
+		</p>
+		<script>
+		$(document).ready(function() {
+			var winHigh = $(window).outerHeight();
+			var winWidth = $(window).width();
+			jQuery('.resol').text('width : ' + winWidth + ', ' + 'height : ' + winHigh);
+
+		});
+		$(window).resize(function() {
+			var winHigh = $(window).outerHeight();
+			var winWidth = $(window).width();
+			jQuery('.resol').text('width : ' + winWidth + ', ' + 'height : ' + winHigh);
+		});
+		</script>
+	</header>
+	<!--// 헤더 디자인 -->
+
+
+
+	<div class="sub-page-container wrap float-wrap">
+
+		<!-- visual-->
+		<div class="visual_wrap">
+			<div class="visual__in"></div>
+		</div>
+		<div class="sub-page-container__wrap float_wrap">
+
+			<!-- sidebar -->
+			<nav id="sidebar" class="sidebar">
+				<h2 id="menu_sbj" class="sidebar__h2">egbiz 소개 <a href="#">메뉴열기</a></h2>
+				<div class="sidebar__wrap side_in_wrap">
+
+					<ul class="side-list side_ul lnb-bar-ul float_wrap">
+
+						<li class="side-list__li lnb-menu on">							<!-- on 클래스 위치 -->
+
+							<span><a href="#">보건소 소개</a></span>
+
+							<div class="side-list__li__inbox">
+								<ul>
+									<li class="spp__in">
+										<a href="#">암표지자검사/감상선검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">골다공증(골밀도)검진</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">성병검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">결핵검사</a>
+									</li>
+									<li class="spp__in on">					<!-- on 클래스 위치 -->
+										<a href="#">에이즈검사</a>
+										<ul class="spp__in__small">
+											<li class="on">					<!-- on 클래스 위치 -->
+												<a href="#">3차 메뉴</a>
+												<!--
+												<ul class="spp__in__small__4th">
+													<li class="on"><a href="#">4차 메뉴 on클래스위치</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+												</ul>
+												-->
+
+											</li>
+											<li><a href="#">3차 메뉴</a></li>
+											<li><a href="#">3차 메뉴</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="side-list__li lnb-menu on">
+							<span><a href="#">건강검진</a></span>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">대사증후군검진</a></span>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">예방접종</a></span>
+
+							<div class="side-list__li__inbox">
+								<ul>
+									<li class="spp__in">
+										<a href="#">암표지자검사/감상선검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">골다공증(골밀도)검진</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">성병검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">결핵검사</a>
+									</li>
+									<li class="spp__in">					<!-- on 클래스 위치 -->
+										<a href="#">에이즈검사</a>
+										<ul class="spp__in__small">
+											<li class="">					<!-- on 클래스 위치 -->
+												<a href="#">3차 메뉴</a>
+												<ul class="spp__in__small__4th">
+													<li class=""><a href="#">4차 메뉴</a></li><!-- on 클래스 위치 -->
+													<li><a href="#">4차 메뉴</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+												</ul>
+
+											</li>
+											<li><a href="#">3차 메뉴</a></li>
+											<li><a href="#">3차 메뉴</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">진료내역조회</a></span>
+						</li>
+
+
+					</ul>
+				</div><!--//side_in_wrap -->
+
+				<script>
+					jQuery(document).ready(function() {
+						side_open();	// 메뉴 클릭시 세부메뉴가 있을경우 펼침으로 동작.
+						//side_open2(); // 메뉴 클릭시 메뉴 바로이동을 원할 경우 활성화함. side_open(); 는 비활성화로.
+						mobile_ver_menu();
+					});
+				</script>
+			</nav>
+			<!-- sidebar -->
+
+			<!-- sub-contents -->
+			<section class="sub-contents">
+
+				<article class="sub-contents__top">
+					<!-- 컨텐츠 제목, 로케이션 -->
+					<div class="location-box">
+						<p class="location-box__cont float_wrap">
+							<span><a href="#" class="loc-home">HOME</a></span>
+							<span>게시판 쓰기</span>
+						</p>
+					</div>
+					<h2 id="cont_sbj" class="sub-tit loc_tit">게시판 쓰기</h2>
+
+					<div class="sub-sns-box-wrap">
+						<p class="sub-sns-box">
+							<a href="#" class="sns-opener" title="sns 공유">
+								<img src="commons/images/basic/n-sns-opener-new.png" alt="공유">
+							</a>
+							<span class="sns-little-box">
+								<a href="#"><img src="commons/images/basic/n-sns-twit.png" alt="트위터"></a>
+								<a href="#"><img src="commons/images/basic/n-sns-fb.png" alt="페이스북"></a>
+							</span>
+							<script>
+								function snsLittleOpener(){
+									jQuery('.sns-opener').on('click',function(){
+										jQuery('.sns-little-box').toggleClass('on');
+										return false;
+									});
+								}
+								snsLittleOpener();
+							</script>
+							<a href="#" onclick="print();return false;" title="인쇄하기"><img src="commons/images/basic/n-sns-print.png" alt="인쇄하기"></a>
+						</p>
+					</div>
+				</article>
+
+				<div class="cont-in">
+				<!-- +++++++++++++++++++++++++ contents +++++++++++++++++++++++++ -->
+					 <fieldset>
+                        <legend>글쓰기</legend>
+                        <form action="/">
+                            <div class="bbs_write_wrap">
+                                <div class="bbs_write_in">
+                                    <table>
+                                        <caption>게시판 글쓰기</caption>
+                                        <colgroup>
+                                            <col style="width:15%"/>
+                                            <col style="width:85%"/>
+                                        </colgroup>
+										<thead>
+											<tr class="sj_line">
+												<th scope="row"><label for="sbj_01">제목</label></th>
+												<td colspan="3"><input type="text" id="sbj_01" class="in_box in_length98pro"/></td>
+											</tr>
+											<tr class="sj_line">
+												<th scope="row"><label for="man_nm">작성자</label></th>
+												<td colspan="3"><input type="text" id="man_nm" class="in_box in_length98pro"/></td>
+											</tr>
+											<!--
+											<tr>
+												<th scope="row"><label for="phone_01">휴대폰번호</label></th>
+												<td>
+														<select id="phone_01" class="top_select in_length80">
+															<option>010</option>
+														</select> -
+													<label for="phone_02" class="hidden_word">휴대폰 앞자리번호</label>
+														<input type="text" id="phone_02" class="in_box in_length50"/> -
+													<label for="phone_03" class="hidden_word">휴대폰 뒷자리번호</label>
+														<input type="text" id="phone_03" class="in_box in_length50"/>
+												</td>
+												<th scope="row"><label for="email_01">이메일</label></th>
+												<td>
+													<input type="text" id="email_01" class="in_box in_length100"/> @
+													<label for="email_02" class="hidden_word">이메일주소 뒷부분고르기</label>
+														<select id="email_02" class="top_select">
+															<option selected="selected">선택</option>
+															<option>gmail.com</option>
+														</select>
+												</td>
+											</tr> -->
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row"><label for="sbj_02">내용</label></th>
+												<td colspan="3">
+													<textarea rows="10" id="sbj_02" cols="50" class="in_area"></textarea>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">공개설정</th>
+												<td colspan="3">
+													&nbsp;
+													<input type="checkbox" id="ra_01" class="in_check"/>
+													<label for="ra_01">공지글</label>&nbsp;&nbsp;
+													<input type="checkbox" id="ra_02" class="in_check"/>
+													<label for="ra_02">비밀글</label>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">파일첨부</th>
+												<td colspan="3">
+													<p class="">
+														<input type="text" id="go_file" class="in_box in_length300"/>
+														<label for="go_file">
+															<a href="#" class="btn_t4"><span>찾아보기</span></a>
+														</label>
+													</p>
+													<!--
+													<div class="file_box">
+														<p class="mgn_b5">파일 제목입니다. <span class="pos_file"><a href="#"><img src="/jpwn/commons/images/basic/x_btn.jpg" alt="지우기"/></a></span></p>
+														<p class="mgn_b5">파일 제목입니다. <span class="pos_file"><a href="#"><img src="/jpwn/commons/images/basic/x_btn.jpg" alt="지우기"/></a></span></p>
+														<p class="mgn_b5">파일 제목입니다. <span class="pos_file"><a href="#"><img src="/jpwn/commons/images/basic/x_btn.jpg" alt="지우기"/></a></span></p>
+													</div> -->
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+							</div>
+						</form>
+					</fieldset>
+
+
+					<p class="align_center">
+						<a href="#" class="btn_t1"><span>확인</span></a>
+						<a href="#" class="btn_t1"><span>취소</span></a>
+					</p>
+
+				<!-- +++++++++++++++++++++++++ contents +++++++++++++++++++++++++ -->
+			</div><!--//cont-in -->
+		</section>
+
+	</div>
+</div>
+
+<footer id="footer">
+	<div class="footer_in_wrap">
+		<p class="foot_img"><img src="commons/images/global/foot_img.png" alt="이지비즈"/></p>
+		<div class="copy_box">
+			<ul class="float_wrap">
+				<li><a href="#">
+					<strong>개인정보처리방침</strong>
+				</a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">사이트맵</a></li>
+			</ul>
+		</div><!--//copy_box -->
+		<div class="copy_box2">
+			<address class="item1 float_wrap">(16229)경기도 수원시 영통구 광교로 107  사업자등록번호 : 124-82-08755<br>
+			TEL :  <span class="col_red"> 02-2109-2500</span>  FAX : 02-2109-2599
+			</address>
+			<p class="item2">COPYRIGHT(C) 2018 EGBIZ.OR.KR ALL RIGHTS RESERVED.</p>
+		</div><!--//copy_box2 -->
+
+		<!--
+		<article class="foot_select">
+			<h3 class="hidden_word">관련기관 바로가기</h3>
+			<div class="mgn_b5">
+				<label for="search_f" class="hidden_word">관련기관 바로가기 선택</label>
+				<div class="select_design in_length150">
+
+					<select name="" id="search_f">
+						<option value="" selected="selected">관련기관 바로가기</option>
+						<option value="http://www.naver.com">네이버</option>
+						<option value="http://www.naver.com">네이버</option>
+						<option value="http://www.naver.com">네이버</option>
+						<option value="http://www.naver.com">네이버</option>
+						<option value="http://www.naver.com">네이버</option>
+						<option value="http://www.naver.com">네이버</option>
+						<option value="http://www.naver.com">네이버</option>
+					</select>
+				</div>
+				<a href="#" class="select_go" onclick="window.open(jQuery('#search_f option:selected').val());" title="새창열림">이동
+				</a>
+			</div>
+
+		</article>
+		-->
+	</div>
+
+
+</footer>
+<script>title_copy('이지비즈');// title 출력 부분 </script>
+</body>
+</html>

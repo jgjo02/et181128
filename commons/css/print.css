@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+header,footer,.sub_flash,#sidebar,.survey,#quick_wrap,.pos_print_btn,.visua_wrap{display:none;}
+.container,#content,.contents,.sub-contents{width:100%;}
+
+.print_btn_pos,.print_btn_pos2,.sub-sns-box-wrap{display:none;}
+.pr_hidden{display:block;}

@@ -1,0 +1,2604 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html dir="ltr"lang="ko-KR" class="ie6 lte-ie9 lte-ie8 lte-ie7 lte-ie6"><![endif]-->
+<!--[if lte IE 7]><html dir="ltr"lang="ko-KR" class="ie7 lte-ie9 lte-ie8 lte-ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr"lang="ko-KR" class="ie8 lte-ie9 lte-ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr"lang="ko-KR" class="ie9 lte-ie9"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html dir="ltr" lang="ko-KR"><!--<![endif]-->
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="이지비즈"/>
+	<meta name="author" content="jun-doo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/board.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/global.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/mobile_global.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/mobile.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="commons/css/print.css" />
+
+	<script src="commons/js/jquery.js"></script>
+	<script src="commons/js/jquery-migrate-1.2.1.js"></script>
+	<script src="commons/js/jquery.cookie.js"></script>
+	<script src="commons/js/site.js"></script>
+	<script src="commons/js/jquery.cycle.2.js"></script>
+	<script src="commons/js/jquery.cycle.2.carousel.js"></script>
+	<script src="commons/js/jquery.cycle.2.swipe.js"></script>
+	<script src="commons/js/jquery.flexslider.js"></script>
+
+	<script src="commons/js/fakeselect.js"></script>
+    <!--[if lt IE 9]>
+        <script src="commons/js/html5shiv.js"></script>
+    <![endif]-->
+
+
+    <title>▦ 이지비즈</title>
+
+</head>
+<body id="subpage">
+	<!-- 헤더 디자인 -->
+	<header class="header">
+
+		<article class="skiptoContent">
+			<h2 class="hidden_word">바로가기 메뉴</h2>
+			<div>
+				<strong>바로가기 메뉴</strong>
+				<span class="skip_item01"><a href="#cont_sbj" onclick="document.getElementById('cont_sbj').tabIndex = -1;document.getElementById('cont_sbj').focus();jQuery('#cont_sbj').addClass('selected');return false;">본문내용 바로가기</a></span>
+				<span class="skip_item02"><a href="#gnb-go" onclick="document.getElementById('gnb-go').tabIndex = -1;document.getElementById('gnb-go').focus();return false;">메인메뉴 바로가기</a></span>
+			</div>
+		</article>
+		<script>gnb_nav();</script>
+
+
+		<article class="top-nav">
+			<h2 class="hidden_word">주요안내</h2>
+			<div class="top-nav__box">
+
+
+				<div class="top-nav__fav2">
+					<a href="#">HOME</a>
+					<a href="#">회원가입</a>
+					<a href="#">로그인</a>
+					<a href="#">사이트맵</a>
+					<!--
+					<span class="font-size-box">
+						<h3>FONT SIZE</h3>
+						<a href="#" class="font-size-item" onclick="js_font_plus();">
+							<img src="commons/images/global/font-plus.png" alt="폰트크기 키움" />
+						</a>
+						<span class="size-realtime s1">100%</span>
+						<span class="size-realtime s2">110%</span>
+						<span class="size-realtime s3">120%</span>
+						<span class="size-realtime s4">130%</span>
+						<span class="size-realtime s5">140%</span>
+						<a href="#" class="font-size-item" onclick="js_font_minus();">
+							<img src="commons/images/global/font-minus.png" alt="폰트크기 줄임" />
+						</a>
+					</span> -->
+
+				</div>
+
+				<article class="top-search">
+					<h2 class="hidden_word">검색</h2>
+					<div class="top-search__in">
+						<form name="searchForm" method="get" action="/cop/bbs/selectSearchTotalList.do" onsubmit="return checkSearch(this);" >
+							<label for="main_search2" class="hidden_word">검색어 입력</label>
+							<input type="search" name="searchKeyword" id="searchKeyword" placeholder="검색하세요" class="m_se_btn" value=""/>
+							<input type="image" src="commons/images/global/gnb-search-btn.jpg" alt="검색" />
+						</form>
+
+					</div>
+				</article>
+			</div><!--// top-nav__box -->
+
+		</article>
+
+		<div class="header__wrap">
+
+
+			<div class="header__wrap__h1">
+				<h1>
+					<a href="index.html" class="title-item"><img src="commons/images/global/title.png" alt="이지비즈" /></a>
+				</h1>
+			</div>
+
+			<div class="gnb nav-top" id="gnb-go">
+				<h2 class="hidden_word">메인메뉴</h2>
+				<ul class="gnb-ul float_wrap nav-menu">
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">사업신청</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>분류별지원사업</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>지역별지원사업</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사업지원안내</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">Egbiz 소개</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>Egbiz 소개</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>관련사이트</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사업공고등록안내</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">정보광장</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>새소식</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>공지사항</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>입찰정보</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>우수기업탐방</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>정보</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>해외 플랫폼 정보</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">이용안내</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>홈페이지 이용안내</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>회원가입안내</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>자주 묻는 질문</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사용자매뉴얼</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>질의응답</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">회원서비스</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>회원가입</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>로그인</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>아이디/비밀번호찾기</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>이용약관</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>개인정보보호방침</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>이메일무단수집거부</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사이트맵</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+
+
+
+				</ul>
+			</div>
+
+			<script>
+				gnb_type(); //메뉴 숫자 클래스 삽입
+				//sizeComp(); //좌우 패딩형 사이즈 조절
+			</script>
+		</div>
+
+
+
+		<!-- 모바일 메뉴 -->
+		<div class="mobile_top_nav">
+			<div class="mobile_icon">
+				<a href="#gnb_nav_mobile" class="m_open_btn mobile_on_off"><img src="commons/images/mobile/menu_open.png" alt="메뉴보기" /></a>
+				<!-- <a href="#" class="m_s_btn"><img src="commons/images/mobile/menu_search.png" alt="검색" /></a> -->
+			</div>
+			<div class="mobile_top_nav__in">
+				<nav id="gnb_nav_mobile">
+					<h2 class="hidden_word">menu</h2>
+					<ul class="gnb-ul float_wrap nav-menu">
+
+						<!-- 위의 메뉴와 똑같이. but, 최상단 a의 링크는 뺀다. -->
+						<li class="gnb-menu nav-item t_menu">
+								<a href="#">사업신청</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>분류별지원사업</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>지역별지원사업</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사업지원안내</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">Egbiz 소개</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>Egbiz 소개</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>관련사이트</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사업공고등록안내</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">정보광장</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>새소식</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>공지사항</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>입찰정보</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>우수기업탐방</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>정보</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>해외 플랫폼 정보</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">이용안내</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>홈페이지 이용안내</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>회원가입안내</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>자주 묻는 질문</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사용자매뉴얼</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>질의응답</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">회원서비스</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>회원가입</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>로그인</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>아이디/비밀번호찾기</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>이용약관</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>개인정보보호방침</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>이메일무단수집거부</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사이트맵</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+						<!-- -->
+
+
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<span class="mobile-close mobile_on_off"><a href="#">닫기</a></span>
+		<script>
+
+
+			mobile_menu();
+
+
+			function mobile_tc(){
+			$('#gnb_nav_mobile li.taphover').on("touchstart", function (e) {
+			    "use strict"; //satisfy the code inspectors
+			    var link = $(this); //preselect the link
+			    if (link.hasClass('selected')) {
+			        return true;
+			    } else {
+			        link.addClass("selected");
+			        $('#gnb_nav_mobile li.taphover').not(this).removeClass("selected");
+			        e.preventDefault();
+			        return false; //extra, and to make sure the function has consistent return points
+			    }
+			});
+			}
+
+
+			(function(window, document, $) {
+
+				})(window, document, jQuery);
+
+				if(navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
+
+				//   mobile_tc(); //모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+
+				}
+
+
+				function mainGnbMobile() {
+						var oldIndex = 0;
+						jQuery('.mobile_top_nav li.gnb-menu').click(function() {
+							var thisIndex = jQuery('.mobile_top_nav li.gnb-menu').index(this);
+
+							jQuery('.mobile_top_nav div.sub-nav').removeClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').removeClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').removeClass('on');
+
+							jQuery('.mobile_top_nav div.sub-nav').eq(thisIndex).addClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').eq(thisIndex).addClass('selected');
+
+							//return false;
+						});
+
+
+				};
+
+				mainGnbMobile();
+
+		</script>
+		<p class="resol">
+		</p>
+		<script>
+		$(document).ready(function() {
+			var winHigh = $(window).outerHeight();
+			var winWidth = $(window).width();
+			jQuery('.resol').text('width : ' + winWidth + ', ' + 'height : ' + winHigh);
+
+		});
+		$(window).resize(function() {
+			var winHigh = $(window).outerHeight();
+			var winWidth = $(window).width();
+			jQuery('.resol').text('width : ' + winWidth + ', ' + 'height : ' + winHigh);
+		});
+		</script>
+	</header>
+	<!--// 헤더 디자인 -->
+
+
+
+	<div class="sub-page-container wrap float-wrap">
+
+		<!-- visual-->
+		<div class="visual_wrap">
+			<div class="visual__in"></div>
+		</div>
+		<div class="sub-page-container__wrap float_wrap">
+
+			<!-- sidebar -->
+			<nav id="sidebar" class="sidebar">
+				<h2 id="menu_sbj" class="sidebar__h2">egbiz 소개 <a href="#">메뉴열기</a></h2>
+				<div class="sidebar__wrap side_in_wrap">
+
+					<ul class="side-list side_ul lnb-bar-ul float_wrap">
+
+						<li class="side-list__li lnb-menu on">							<!-- on 클래스 위치 -->
+
+							<span><a href="#">보건소 소개</a></span>
+
+							<div class="side-list__li__inbox">
+								<ul>
+									<li class="spp__in">
+										<a href="#">암표지자검사/감상선검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">골다공증(골밀도)검진</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">성병검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">결핵검사</a>
+									</li>
+									<li class="spp__in on">					<!-- on 클래스 위치 -->
+										<a href="#">에이즈검사</a>
+										<ul class="spp__in__small">
+											<li class="on">					<!-- on 클래스 위치 -->
+												<a href="#">3차 메뉴</a>
+												<!--
+												<ul class="spp__in__small__4th">
+													<li class="on"><a href="#">4차 메뉴 on클래스위치</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+												</ul>
+												-->
+
+											</li>
+											<li><a href="#">3차 메뉴</a></li>
+											<li><a href="#">3차 메뉴</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="side-list__li lnb-menu on">
+							<span><a href="#">건강검진</a></span>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">대사증후군검진</a></span>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">예방접종</a></span>
+
+							<div class="side-list__li__inbox">
+								<ul>
+									<li class="spp__in">
+										<a href="#">암표지자검사/감상선검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">골다공증(골밀도)검진</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">성병검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">결핵검사</a>
+									</li>
+									<li class="spp__in">					<!-- on 클래스 위치 -->
+										<a href="#">에이즈검사</a>
+										<ul class="spp__in__small">
+											<li class="">					<!-- on 클래스 위치 -->
+												<a href="#">3차 메뉴</a>
+												<ul class="spp__in__small__4th">
+													<li class=""><a href="#">4차 메뉴</a></li><!-- on 클래스 위치 -->
+													<li><a href="#">4차 메뉴</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+												</ul>
+
+											</li>
+											<li><a href="#">3차 메뉴</a></li>
+											<li><a href="#">3차 메뉴</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">진료내역조회</a></span>
+						</li>
+
+
+					</ul>
+				</div><!--//side_in_wrap -->
+
+				<script>
+					jQuery(document).ready(function() {
+						side_open();	// 메뉴 클릭시 세부메뉴가 있을경우 펼침으로 동작.
+						//side_open2(); // 메뉴 클릭시 메뉴 바로이동을 원할 경우 활성화함. side_open(); 는 비활성화로.
+						mobile_ver_menu();
+					});
+				</script>
+			</nav>
+			<!-- sidebar -->
+
+			<!-- sub-contents -->
+			<section class="sub-contents">
+
+				<article class="sub-contents__top">
+					<!-- 컨텐츠 제목, 로케이션 -->
+					<div class="location-box">
+						<p class="location-box__cont float_wrap">
+							<span><a href="#" class="loc-home">HOME</a></span>
+							<span>스타일가이드</span>
+						</p>
+					</div>
+					<h2 id="cont_sbj" class="sub-tit loc_tit">스타일가이드</h2>
+
+					<div class="sub-sns-box-wrap">
+						<p class="sub-sns-box">
+							<a href="#" class="sns-opener" title="sns 공유">
+								<img src="commons/images/basic/n-sns-opener-new.png" alt="공유">
+							</a>
+							<span class="sns-little-box">
+								<a href="#"><img src="commons/images/basic/n-sns-twit.png" alt="트위터"></a>
+								<a href="#"><img src="commons/images/basic/n-sns-fb.png" alt="페이스북"></a>
+							</span>
+							<script>
+								function snsLittleOpener(){
+									jQuery('.sns-opener').on('click',function(){
+										jQuery('.sns-little-box').toggleClass('on');
+										return false;
+									});
+								}
+								snsLittleOpener();
+							</script>
+							<a href="#" onclick="print();return false;" title="인쇄하기"><img src="commons/images/basic/n-sns-print.png" alt="인쇄하기"></a>
+						</p>
+					</div>
+				</article>
+
+				<div class="cont-in">
+				<!-- +++++++++++++++++++++++++ contents +++++++++++++++++++++++++ -->
+
+				<article class="survey-box">
+					<h3 class="survey-box__h3">열람정보 만족도</h3>
+					<ul class="survey-box__list float_wrap">
+						<li>
+							<input type="radio" id="sv_5" class="chk_box">
+							<label for="sv_5">매우만족(5점)</label>
+						</li>
+						<li>
+							<input type="radio" id="sv_4" class="chk_box">
+							<label for="sv_4">만족(4점)</label>
+						</li>
+						<li>
+							<input type="radio" id="sv_3" class="chk_box">
+							<label for="sv_3">보통(3점)</label>
+						</li>
+						<li>
+							<input type="radio" id="sv_2" class="chk_box">
+							<label for="sv_2">불만족(2점)</label>
+						</li>
+						<li>
+							<input type="radio" id="sv_1" class="chk_box">
+							<label for="sv_1">매우불만족(1점)</label>
+						</li>
+					</ul>
+					<a href="#" class="btn_search"><span>점수주기</span></a>
+				</article>
+
+				<div class="design-tab">
+					<ul class="design-tab__ul float_wrap">
+						<li class="design-tab__ul__li on"> <!-- on -->
+							<a href="#">
+								<span class="design-icon type1">&nbsp;</span>
+								금융
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type2">&nbsp;</span>
+								기술
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type3">&nbsp;</span>
+								인력
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type4">&nbsp;</span>
+								수출
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type5">&nbsp;</span>
+								내수
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type6">&nbsp;</span>
+								창업
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type7">&nbsp;</span>
+								경영
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type8">&nbsp;</span>
+								제도
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type9">&nbsp;</span>
+								동반성장
+							</a>
+						</li>
+						<li class="design-tab__ul__li">
+							<a href="#">
+								<span class="design-icon type10">&nbsp;</span>
+								소상공
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<h3 class="h3_bul2">연혁</h3>
+
+				<div class="yunhyuck">
+
+
+					<ul class="yun_list">
+						<li>
+							<h4>2014</h4>
+							<dl>
+								<dt>08.01</dt><dd><strong>이지비즈 시스템 개편</strong>
+									<p class="h4_bul3 nopadding">경기수출기업지원정보 시스템(trade.gg.go.kr)통합 완료BPMS (Business Process Management System)
+											서비스 오픈</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<h4>2013</h4>
+							<dl>
+								<dt>05.30</dt><dd><strong>통합회원 시스템 구축 (SSO)</strong>
+									<p class="h4_bul3 nopadding">이지비즈, GSBC아카데미, G-Trade, G-FAIR, G-DesignFair, GDS, 기업SOS넷, 소상공동봄, 경기콘텐츠진흥원
+											등 9개 사이트</p>
+								</dd>
+
+								<dt>04.15</dt><dd><strong>이지비즈 서비스 개편</strong></dd>
+
+								<dt>03.06</dt><dd><strong>검색신뢰도 향상 및 검색속도 향상을 위한 검색엔진 도입</strong>
+									<p class="h4_bul3 nopadding">경기도, 중소기업청, KOTRA 등 30개 기관의 기업지원정보 연계서비스 제공</p>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+
+
+				<h3 class="h3_bul2">이지비즈 제공서비스</h3>
+
+
+				<h3 class="h3_bul">테두리 박스 기본형</h3>
+				<div class="box-wrap">
+					<div class="box-wrap__in float_wrap">
+						내용
+					</div>
+				</div>
+
+				<div class="box_type1">
+					<pre>
+
+&lt;div class="box-wrap"&gt;
+	&lt;div class="box-wrap__in float_wrap"&gt;
+		내용
+	&lt;/div&gt;
+&lt;/div&gt;
+
+					</pre>
+				</div>
+<br><br>
+				<h3 class="h3_bul">테두리 박스 이미지형</h3>
+				<div class="box-wrap">
+					<div class="box-wrap__in float_wrap">
+						<div class="box-wrap__in__img-type">
+							<p class="box-wrap__in__img-type__item">
+								<img src="commons/images/basic/box-img-item-temp.jpg" alt="예제이미지">
+							</p>
+							<h4 class="h4_bul2">결핵이란?</h4>
+							<p class="mgn_b20">이지비즈 모바일 앱은 경기도 관내	중소들을 위해 다양한 기업지원정보를 제공하는 어플리케이션
+								입니다. 자금, 경영, 인력 등 기업인들이 필요로 하는 정보를 실시간으로 받아 보실 수 있으며,
+								무엇보다도 꼭 필요한 정보만을 제공하여 기업을 운영하시는데 큰 도움이 될 것입니다.
+								또한 필요한 하는 기업정보를 쉽게 찾을 수 있도록 검색기능을 강화 하였으며, 기관별정보/
+								인기정보/마감임박 정보 등의 메뉴를 제공하여 빠르게 원하는 정보를 얻으실 수 있을 것입니다.
+								계속적으로 중소기업인들이 성장할 수 유익한 서비스가 되도록 하겠습니다.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="box_type1">
+					<pre>
+
+&lt;div class="box-wrap"&gt;
+	&lt;div class="box-wrap__in float_wrap"&gt;
+		&lt;div class="box-wrap__in__img-type"&gt;
+			&lt;p class="box-wrap__in__img-type__item"&gt;
+				&lt;img src="commons/images/basic/box-img-item-temp.jpg" alt="예제이미지"&gt;
+			&lt;/p&gt;
+			&lt;h4 class="h4_bul2"&gt;결핵이란?&lt;/h4&gt;
+			&lt;p class="mgn_b20"&gt;결핵균의 감염에 의해 발생하는 감염성 질환으로 주로 폐에 발생하지만, 뇌, 척수, 임파선 등
+				인체의 모든 장기에 발생할 수 있으며 이중에서 폐와 기관지, 후두의 결핵만이 감염성을 갖고
+				있으며 다른 장기의 결핵은 감염성이 없습니다.
+			&lt;/p&gt;
+			&lt;p&gt;증상으로 기침이나 가래, 객담,무력감, 식욕부진, 체중감소, 발열, 호흡곤란 등 이며 초기에는
+				특별한 증상이 없으나 이들 증상들 특히 2~3주 이상 기침이 계속되는 경우에는 의사의 진찰을
+				받으셔야 합니다.
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+					</pre>
+				</div>
+<br><br>
+
+<h3 class="h3_bul4"><em>1</em>분야별 지원기업 정책정보 홍보 </h3>
+<p class="left_50 mgn_b30">내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 </p>
+<h3 class="h3_bul4"><em>2</em>분야별 지원기업 정책정보 홍보 </h3>
+<p class="left_50 mgn_b30">내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 </p>
+
+<br><br>
+<br><br>
+				<h3 class="h3_bul"><span>불릿 설정</span></h3>
+				<div class="tb_type1">
+					<table>
+						<tr>
+							<td><h3 class="h3_bul"><span>H3_bul</span></h3></td>
+							<td>&lt;h3 class="h3_bul"&gt;&lt;span&gt;H3_bul&lt;/span&gt;&lt;/h3&gt;</td>
+						</tr>
+						<tr>
+							<td><h3 class="h3_bul left_10"><span>H3_bul</span></h3></td>
+							<td>&lt;h3 class="h3_bul left_10"&gt;&lt;span&gt;H3_bul&lt;/span&gt;&lt;/h3&gt;</td>
+						</tr>
+						<tr>
+							<td><h3 class="h3_bul2">H3_bul2</h3></td>
+							<td>&lt;h3 class="h3_bul2"&gt;H3_bul2&lt;/h3&gt;</td>
+						</tr>
+						<tr>
+							<td><h3 class="h3_bul2">h3_bul2 제목 <small>작은 부연글 조합</small></h3></td>
+							<td>&lt;h3 class="h3_bul2"&gt;h3_bul2 제목  &lt;small&gt;작은 부연글 조합&lt;/small&gt;&lt;/h3&gt;</td>
+						</tr>
+						<tr>
+							<td><h3 class="h3_bul3">H3_bul3</h3></td>
+							<td>&lt;h3 class="h3_bul3"&gt;H3_bul3&lt;/h3&gt;</td>
+						</tr>
+
+						<tr>
+							<td><h3 class="h3_bul4"><em>1</em>분야별 지원기업 정책정보 홍보 </h3></td>
+								<td>&lt;h3 class="h3_bul4"&gt;&lt;em&gt;1&lt;/em&gt;분야별 지원기업 정책정보 홍보 &lt;/h3&gt;</td>
+							</tr>
+
+						<tr>
+							<td><h4 class="h4_bul">ddd 자료</h4></td>
+							<td>&lt;h4 class="h4_bul"&gt;dddd 자료&lt;/h4&gt;</td>
+						</tr>
+						<tr>
+							<td><h4 class="h4_bul nopadding">ddd 자료</h4></td>
+							<td>&lt;h4 class="h4_bul nopadding"&gt;dddd 자료&lt;/h4&gt;</td>
+						</tr>
+						<tr>
+							<td><h4 class="h4_bul2">ddd 자료</h4></td>
+							<td>&lt;h4 class="h4_bul2"&gt;dddd 자료&lt;/h4&gt;</td>
+						</tr>
+						<tr>
+							<td><h4 class="h4_bul3">ddd 자료</h4></td>
+							<td>&lt;h4 class="h4_bul3"&gt;dddd 자료&lt;/h4&gt;</td>
+						</tr>
+						<tr>
+							<td><h4 class="h4_bul3 nopadding">ddd 자료</h4></td>
+							<td>&lt;h4 class="h4_bul3 nopadding"&gt;dddd 자료&lt;/h4&gt;</td>
+						</tr>
+						<tr>
+							<td><h4 class="h4_bul4">ddd 자료</h4></td>
+							<td>&lt;h4 class="h4_bul4"&gt;dddd 자료&lt;/h4&gt;</td>
+						</tr>
+
+
+					</table>
+				</div>
+
+
+				<h3 class="h3_bul">버튼 설정</h3>
+
+				<div class="tb_type2">
+					<table>
+						<tr>
+							<td><a href="#" class="btn_t1"><span>버튼1 </span></a></td>
+							<td>&lt;a href="#" class="btn_t1"&gt;&lt;span&gt;버튼1&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t2"><span>버튼2</span></a></td>
+							<td>&lt;a href="#" class="btn_t2"&gt;&lt;span&gt;버튼2&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t3"><span>버튼3</span></a></td>
+							<td>&lt;a href="#" class="btn_t3"&gt;&lt;span&gt;버튼3&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t4"><span>버튼4</span></a></td>
+							<td>&lt;a href="#" class="btn_t4"&gt;&lt;span&gt;버튼4&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t5"><span>버튼5</span></a></td>
+							<td>&lt;a href="#" class="btn_t5"&gt;&lt;span&gt;버튼5&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t6"><span>버튼6</span></a></td>
+							<td>&lt;a href="#" class="btn_t6"&gt;&lt;span&gt;버튼6&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t7"><span>버튼7</span></a></td>
+							<td>&lt;a href="#" class="btn_t7"&gt;&lt;span&gt;버튼7&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t8"><span>버튼8</span></a></td>
+							<td>&lt;a href="#" class="btn_t8"&gt;&lt;span&gt;버튼8&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t9"><span>버튼9</span></a></td>
+							<td>&lt;a href="#" class="btn_t9"&gt;&lt;span&gt;버튼9&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t10"><span>버튼10</span></a></td>
+							<td>&lt;a href="#" class="btn_t10"&gt;&lt;span&gt;버튼10&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_blue"><span>블루버튼</span></a></td>
+							<td>&lt;a href="#" class="btn_blue"&gt;&lt;span&gt;블루버튼&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_green"><span>그린버튼</span></a></td>
+							<td>&lt;a href="#" class="btn_green"&gt;&lt;span&gt;그린버튼&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="type-faq-btn">FAQ 바로가기</a></td>
+							<td>&lt;a href="#" class="type-faq-btn"&gt;FAQ 바로가기&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="re-reply-btn">REPLY</a></td>
+							<td>&lt;a href="#" class="re-reply-btn"&gt;REPLY&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="reply-del-btn">DEL</a></td>
+							<td>&lt;a href="#" class="reply-del-btn"&gt;DEL&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_search"><span>검색</span></a></td>
+							<td>&lt;a href="#" class="btn_search"&gt;&lt;span&gt;검색&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_go_list"><span>목록</span></a></td>
+							<td>&lt;a href="#" class="btn_go_list"&gt;&lt;span&gt;목록&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_map"><span>약도 보기</span></a></td>
+							<td>&lt;a href="#" class="btn_map"&gt;&lt;span&gt;약도 보기&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_down"><span>다운로드 형식</span></a></td>
+							<td>&lt;a href="#" class="btn_down"&gt;&lt;span&gt;다운로드 형식&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_down2"><span>다운로드 형식2</span></a></td>
+							<td>&lt;a href="#" class="btn_down2"&gt;&lt;span&gt;다운로드 형식2&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_down3"><span>다운로드 형식3</span></a></td>
+							<td>&lt;a href="#" class="btn_down3"&gt;&lt;span&gt;다운로드 형식3&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_down4"><span>다운로드 형식4</span></a></td>
+							<td>&lt;a href="#" class="btn_down4"&gt;&lt;span&gt;다운로드 형식4&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_down5"><span>다운로드 형식5</span></a></td>
+							<td>&lt;a href="#" class="btn_down5"&gt;&lt;span&gt;다운로드 형식5&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_down6"><span>다운로드 형식6</span></a></td>
+							<td>&lt;a href="#" class="btn_down6"&gt;&lt;span&gt;다운로드 형식6&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_go_new"><span>바로가기</span></a></td>
+							<td>&lt;a href="#" class="btn_go_new"&gt;&lt;span&gt;바로가기&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_go_now_2" target="_blank" title="새창열림"><span>새창열림 </span></a></td>
+							<td>&lt;a href="#" class="btn_go_now_2" target="_blank" title="새창열림"&gt;&lt;span&gt;바로가기&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_list"><span>목록보기</span></a></td>
+							<td>&lt;a href="#" class="btn_list"&gt;목록보기&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_list2"><span>목록보기</span></a></td>
+							<td>&lt;a href="#" class="btn_list2"&gt;목록보기&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_list_prev"><span>이전으로</span></a></td>
+							<td>&lt;a href="#" class="btn_list_prev"&gt;이전으로&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_list_org" title="새창열림" target="_blank"><span>새창열림</span></a></td>
+							<td>&lt;a href="#" class="btn_list_org" title="새창열림" target="_blank"&gt;새창열림&lt;/a&gt;</td>
+						</tr>
+
+						<tr>
+							<td><a href="#" class="btn_t5"><span>다운로드 <em>&nbsp;</em></span></a></td>
+							<td>&lt;a href="#" class="btn_t5"&gt;&lt;span&gt;다운로드 &lt;em&gt;&nbsp;&lt;/em&gt;&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t5 blue"><span>다운로드 <em>&nbsp;</em></span></a></td>
+							<td>&lt;a href="#" class="btn_t5 blue"&gt;&lt;span&gt;다운로드 &lt;em&gt;&nbsp;&lt;/em&gt;&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t6"><span><em>&nbsp;</em> 법정감염병 종류 및 신고범위</span></a></td>
+							<td>&lt;a href="#" class="btn_t6"&gt;&lt;span&gt; &lt;em&gt;&nbsp;&lt;/em&gt; 법정감염병 종류 및 신고범위 &lt;/span&gt;&lt;/a&gt;</td>
+						</tr>
+
+						<tr>
+							<td><button type="submit" class="btn_t1" value="값"><span>버튼1 submit</span></button></td>
+							<td>&lt;button type="submit" class="btn_t1" value="값"&gt;&lt;span&gt;버튼1 submit&lt;/span&gt;&lt;/button&gt;</td>
+						</tr>
+						<tr>
+							<td><button type="submit" class="btn_t2" value="값"><span>버튼2 submit</span></button></td>
+							<td>&lt;button type="submit" class="btn_t2" value="값"&gt;&lt;span&gt;버튼2 submit&lt;/span&gt;&lt;/button&gt;</td>
+						</tr>
+						<tr>
+							<td><button type="submit" class="btn_t3" value="값"><span>버튼3 submit</span></button></td>
+							<td>&lt;button type="submit" class="btn_t3" value="값"&gt;&lt;span&gt;버튼3 submit&lt;/span&gt;&lt;/button&gt;</td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn_t7"><span>우편번호검색</span></a></td>
+							<td>&lt;a href="#" class="btn_t7"&gt;&lt;span&gt;우편번호검색&lt;/span&gt;&lt;/a&gt;</td>
+						</tr>					</table>
+				</div>
+
+<br><br>
+
+				<h3 class="h3_bul">리스트 설정</h3>
+
+
+				<div class="tb_type2">
+					<table>
+					<tr>
+						<td>
+							<ul class="basic_list1">
+								<li>basic_list1</li>
+								<li>basic_list1</li>
+							</ul>
+						</td>
+						<td>
+							&lt;ul class="basic_list1"&gt;<br>
+							&nbsp;&nbsp;&nbsp;	&lt;li&gt;basic_list1&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;	&lt;li&gt;basic_list1&lt;/li&gt;<br>
+							&lt;/ul&gt;
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul class="basic_list1 left_plus">
+								<li>basic_list1</li>
+								<li>basic_list1</li>
+							</ul>
+						</td>
+						<td>
+							&lt;ul class="basic_list1 left_plus"&gt;<br>
+							&nbsp;&nbsp;&nbsp;	&lt;li&gt;basic_list1&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;	&lt;li&gt;basic_list1&lt;/li&gt;<br>
+							&lt;/ul&gt;
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul class="basic_list2">
+								<li>basic_list2</li>
+								<li>basic_list2</li>
+							</ul>
+						</td>
+						<td>
+							&lt;ul class="basic_list2"&gt;<br>
+							&nbsp;&nbsp;&nbsp;	&lt;li&gt;basic_list2&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;	&lt;li&gt;basic_list2&lt;/li&gt;<br>
+							&lt;/ul&gt;
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul class="basic_list2 left_plus">
+								<li>basic_list2 left_plus</li>
+								<li>basic_list2 left_plus</li>
+							</ul>
+						</td>
+						<td>
+							&lt;ul class="basic_list2 left_plus"&gt;<br>
+							&nbsp;&nbsp;&nbsp;	&lt;li&gt;basic_list2 left_plus&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;	&lt;li&gt;basic_list2 left_plus&lt;/li&gt;<br>
+							&lt;/ul&gt;
+						</td>
+					</tr>
+					</table>
+				</div>
+
+
+<br>
+
+				<!-- FAQ -->
+				<h3 class="h3_bul">FAQ <small>자주 문의되는 질문의 답변을 확인하시면 궁금한 사항을 빠르게 해결하실 수 있습니다.</small></h3>
+				<div class="faq tab_tong">
+					<div class="faq_q"><a href="#an_01"><em>Q.</em> 방송 등 언론매체의 의한 피해보상</a></div>
+					<div id="an_01" class="answer_box">
+						<div class="answer_box__q">O월 O일 OO프로그램에서의 특정직업에 대한 부정적인 측면만 보도하는 등의 편파방송으로 재산상 피해 및 정신적 피해를 보았습니다. <br>해당프로그램에 대한 사과방송과 함께 피해보상을 받고 싶습니다.</div>
+						<div class="answer_box__a">방송 등 언론매체에 의한 보도로 피해를 입었을 경우 이와 관련한 피해 상담 및 손해배상, 정정보도 및 사과보도 등의 업무는 <strong class="col_org">언론중재위원회</strong>에서 다루고 있습니다. 이를 참고하셔서 정정 및 사과 방송, 손해 보상 등에 대해서는 언론중재위원회로 문의해보시기 바랍니다. <br><br>방송통신심의위원회에서는 심의규정에 의거, 민원이 제기된 방송 프로그램에 대한 사후 심의를 담당하고 있으며, 방송프로그램의 내용을 검토한 후, 필요할 경우 심의규정 위반여부 및 정도를 판단하여, 방송내용에 대한 심의제재 조치를 의결할 수 있습니다. </div>
+					</div>
+					<div class="faq_q"><a href="#an_02"><em>Q.</em> 방송 등 언론매체의 의한 피해보상</a></div>
+					<div id="an_02" class="answer_box">
+						<div class="answer_box__q">O월 O일 OO프로그램에서의 특정직업에 대한 부정적인 측면만 보도하는 등의 편파방송으로 재산상 피해 및 정신적 피해를 보았습니다. <br>해당프로그램에 대한 사과방송과 함께 피해보상을 받고 싶습니다.</div>
+						<div class="answer_box__a">방송 등 언론매체에 의한 보도로 피해를 입었을 경우 이와 관련한 피해 상담 및 손해배상, 정정보도 및 사과보도 등의 업무는 <strong class="col_org">언론중재위원회</strong>에서 다루고 있습니다. 이를 참고하셔서 정정 및 사과 방송, 손해 보상 등에 대해서는 언론중재위원회로 문의해보시기 바랍니다. <br><br>방송통신심의위원회에서는 심의규정에 의거, 민원이 제기된 방송 프로그램에 대한 사후 심의를 담당하고 있으며, 방송프로그램의 내용을 검토한 후, 필요할 경우 심의규정 위반여부 및 정도를 판단하여, 방송내용에 대한 심의제재 조치를 의결할 수 있습니다. </div>
+					</div>
+					<div class="faq_q"><a href="#an_03"><em>Q.</em> 방송 등 언론매체의 의한 피해보상</a></div>
+					<div id="an_03" class="answer_box">
+						<div class="answer_box__q">O월 O일 OO프로그램에서의 특정직업에 대한 부정적인 측면만 보도하는 등의 편파방송으로 재산상 피해 및 정신적 피해를 보았습니다. <br>해당프로그램에 대한 사과방송과 함께 피해보상을 받고 싶습니다.</div>
+						<div class="answer_box__a">방송 등 언론매체에 의한 보도로 피해를 입었을 경우 이와 관련한 피해 상담 및 손해배상, 정정보도 및 사과보도 등의 업무는 <strong class="col_org">언론중재위원회</strong>에서 다루고 있습니다. 이를 참고하셔서 정정 및 사과 방송, 손해 보상 등에 대해서는 언론중재위원회로 문의해보시기 바랍니다. <br><br>방송통신심의위원회에서는 심의규정에 의거, 민원이 제기된 방송 프로그램에 대한 사후 심의를 담당하고 있으며, 방송프로그램의 내용을 검토한 후, 필요할 경우 심의규정 위반여부 및 정도를 판단하여, 방송내용에 대한 심의제재 조치를 의결할 수 있습니다. </div>
+					</div>
+				</div>
+				<script>faq_tog();</script>
+
+				<div class="box_type1">
+					<pre>
+
+&lt;h3 class="h3_bul"&gt;FAQ &lt;small&gt;자주 문의되는 질문의 답변을 확인하시면 궁금한
+사항을 빠르게 해결하실 수 있습니다.&lt;/small&gt;&lt;/h3&gt;
+&lt;div class="faq tab_tong"&gt;
+	&lt;div class="faq_q"&gt;&lt;a href="#an_01"&gt;&lt;em&gt;Q.&lt;/em&gt; 질문&lt;/a&gt;&lt;/div&gt;
+	&lt;div id="an_01" class="answer_box"&gt;
+		&lt;div class="answer_box__q"&gt;O월 O일 OO프로그램에서의
+		특정직업에 대한 부정적인 측면만 보도하는 등의 편파방송으로
+		재산상 피해 및 정신적 피해를 보았습니다. &lt;br&gt;해당프로그램에
+		대한 사과방송과 함께 피해보상을 받고 싶습니다.&lt;/div&gt;
+		&lt;div class="answer_box__a"&gt;방송 등 언론매체에 의한 보도로 피해를 입었을 경우
+		이와 관련한 피해 상담 및 손해배상, 정정보도 및 사과보도 등의 업무는
+		&lt;strong class="col_org"&gt;언론중재위원회&lt;/strong&gt;에서 다루고 있습니다.
+		이를 참고하셔서 정정 및 사과 방송, 손해 보상 등에 대해서는 언론중재위원회로 문의해보시기 바랍니다.
+		&lt;br&gt;&lt;br&gt;방송통신심의위원회에서는 심의규정에 의거, 민원이 제기된 방송 프로그램에 대한
+		사후 심의를 담당하고 있으며, 방송프로그램의 내용을 검토한 후, 필요할 경우 심의규정 위반여부 및 정도를 판단하여,
+		방송내용에 대한 심의제재 조치를 의결할 수 있습니다. &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="faq_q"&gt;&lt;a href="#an_02"&gt;&lt;em&gt;Q.&lt;/em&gt; 질문&lt;/a&gt;&lt;/div&gt;
+	&lt;div id="an_02" class="answer_box"&gt;
+		&lt;div class="answer_box__q"&gt;O월 O일 OO프로그램에서의
+		특정직업에 대한 부정적인 측면만 보도하는 등의 편파방송으로
+		재산상 피해 및 정신적 피해를 보았습니다. &lt;br&gt;해당프로그램에
+		대한 사과방송과 함께 피해보상을 받고 싶습니다.&lt;/div&gt;
+		&lt;div class="answer_box__a"&gt;방송 등 언론매체에 의한 보도로 피해를 입었을 경우
+		이와 관련한 피해 상담 및 손해배상, 정정보도 및 사과보도 등의 업무는
+		&lt;strong class="col_org"&gt;언론중재위원회&lt;/strong&gt;에서 다루고 있습니다.
+		이를 참고하셔서 정정 및 사과 방송, 손해 보상 등에 대해서는 언론중재위원회로 문의해보시기 바랍니다.
+		&lt;br&gt;&lt;br&gt;방송통신심의위원회에서는 심의규정에 의거, 민원이 제기된 방송 프로그램에 대한
+		사후 심의를 담당하고 있으며, 방송프로그램의 내용을 검토한 후, 필요할 경우 심의규정 위반여부 및 정도를 판단하여,
+		방송내용에 대한 심의제재 조치를 의결할 수 있습니다. &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="faq_q"&gt;&lt;a href="#an_03"&gt;&lt;em&gt;Q.&lt;/em&gt; 질문&lt;/a&gt;&lt;/div&gt;
+	&lt;div id="an_03" class="answer_box"&gt;
+		&lt;div class="answer_box__q"&gt;O월 O일 OO프로그램에서의
+		특정직업에 대한 부정적인 측면만 보도하는 등의 편파방송으로
+		재산상 피해 및 정신적 피해를 보았습니다. &lt;br&gt;해당프로그램에
+		대한 사과방송과 함께 피해보상을 받고 싶습니다.&lt;/div&gt;
+		&lt;div class="answer_box__a"&gt;방송 등 언론매체에 의한 보도로 피해를 입었을 경우
+		이와 관련한 피해 상담 및 손해배상, 정정보도 및 사과보도 등의 업무는
+		&lt;strong class="col_org"&gt;언론중재위원회&lt;/strong&gt;에서 다루고 있습니다.
+		이를 참고하셔서 정정 및 사과 방송, 손해 보상 등에 대해서는 언론중재위원회로 문의해보시기 바랍니다.
+		&lt;br&gt;&lt;br&gt;방송통신심의위원회에서는 심의규정에 의거, 민원이 제기된 방송 프로그램에 대한
+		사후 심의를 담당하고 있으며, 방송프로그램의 내용을 검토한 후, 필요할 경우 심의규정 위반여부 및 정도를 판단하여,
+		방송내용에 대한 심의제재 조치를 의결할 수 있습니다. &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;faq_tog();&lt;/script&gt;
+					</pre>
+				</div>
+
+
+				<h3 class="h3_bul">탭 형식</h3>
+
+				<!-- 탭 -->
+				<nav class="tab_type type_add">	<!-- type_add -->
+					<h3 class="hidden_word">메뉴</h3>
+					<ul class="float_wrap">
+						<li class="selected">
+							<span><a href="#">사업소개</a></span>
+						</li>
+						<li>
+							<span><a href="#">정관</a></span>
+						</li>
+						<li>
+							<span><a href="#">사업추진현황</a></span>
+						</li>
+						<li>
+							<span><a href="#">환지계획</a></span>
+						</li>
+					</ul>
+				</nav><!--// tab_type -->
+				<script>
+					tabLength();
+				</script>
+
+				<div class="box_type1">
+					<pre>
+
+&lt;!-- 탭 --&gt;
+&lt;nav class="tab_type type_add"&gt; &lt;!--  type_add --&gt;
+	&lt;h3 class="hidden_word"&gt;메뉴&lt;/h3&gt;
+	&lt;ul class="float_wrap"&gt;
+		&lt;li class="selected"&gt;
+			&lt;span&gt;&lt;a href="#"&gt;사업소개&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#"&gt;정관&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#"&gt;사업추진현황&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#"&gt;환지계획&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;&lt;!--// tab_type --&gt;
+&lt;script&gt;
+	tabLength();
+&lt;/script&gt;
+					</pre>
+				</div>
+				<h3 class="h3_bul">탭 형식/ 페이지 작동 + 자동 사이즈 + two라인</h3>
+				<!-- 탭 페이지 작동 -->
+				<nav class="tab_type js_tab_list">
+					<h3 class="hidden_word">메뉴</h3>
+					<ul class="float_wrap tab_auto two-line">
+						<li class="selected">
+							<span><a href="#">사업소개</a></span>
+						</li>
+						<li>
+							<span><a href="#" class="two-line">정관<br>건강특구 222</a></span>
+						</li>
+						<li>
+							<span><a href="#">사업추진현황</a></span>
+						</li>
+						<li>
+							<span><a href="#">환지계획</a></span>
+						</li>
+					</ul>
+				</nav><!--// tab_type -->
+
+				<div class="js_tab_box selected">
+					내용 1
+				</div>
+				<div class="js_tab_box">
+					내용 2
+				</div>
+				<div class="js_tab_box">
+					내용 3
+				</div>
+				<div class="js_tab_box">
+					내용 4
+				</div>
+				<script>subTab();</script>
+				<script>menuSize();</script>
+
+				<div class="box_type1">
+					<pre>
+&lt;!-- 탭 페이지 작동 --&gt;
+&lt;nav class="tab_type js_tab_list"&gt;
+	&lt;h3 class="hidden_word"&gt;메뉴&lt;/h3&gt;
+	&lt;ul class="float_wrap tab_auto two-line"&gt;
+		&lt;li class="selected"&gt;
+			&lt;span&gt;&lt;a href="#"&gt;사업소개&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#" class="two-line"&gt;정관&lt;br&gt;건강특구 222&lt;/a&gt;&lt;/span&gt;     &lt;!-- 두줄라인 --&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#"&gt;사업추진현황&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#"&gt;환지계획&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;&lt;!--// tab_type --&gt;
+
+&lt;div class="js_tab_box selected"&gt;
+	내용 1
+&lt;/div&gt;
+&lt;div class="js_tab_box"&gt;
+	내용 2
+&lt;/div&gt;
+&lt;div class="js_tab_box"&gt;
+	내용 3
+&lt;/div&gt;
+&lt;div class="js_tab_box"&gt;
+	내용 4
+&lt;/div&gt;
+&lt;div class="js_tab_box"&gt;
+	내용 5
+&lt;/div&gt;
+&lt;div class="js_tab_box"&gt;
+	내용 6
+&lt;/div&gt;
+&lt;script&gt;subTab();&lt;/script&gt;
+&lt;script&gt;menuSize();&lt;/script&gt;
+					</pre>
+				</div>
+
+
+				<nav class="tab_type2">
+					<h3 class="hidden_word">메뉴</h3>
+					<ul class="float_wrap">
+						<li class="selected">
+							<span><a href="#">사업소개</a></span>
+						</li>
+						<li>
+							<span><a href="#" class="two-line">정관</a></span>
+						</li>
+						<li>
+							<span><a href="#">사업추진현황</a></span>
+						</li>
+						<li>
+							<span><a href="#">환지계획</a></span>
+						</li>
+					</ul>
+				</nav><!--// tab_type -->
+
+
+				<div class="box_type1">
+					<pre>
+
+&lt;nav class="tab_type2"&gt;
+	&lt;h3 class="hidden_word"&gt;메뉴&lt;/h3&gt;
+	&lt;ul class="float_wrap"&gt;
+		&lt;li class="selected"&gt;
+			&lt;span&gt;&lt;a href="#"&gt;사업소개&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#" class="two-line"&gt;정관&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#"&gt;사업추진현황&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;span&gt;&lt;a href="#"&gt;환지계획&lt;/a&gt;&lt;/span&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;&lt;!--// tab_type --&gt;
+					</pre>
+				</div>
+
+
+			<!-- 검색시작 -->
+                    <article class="search_box">
+						<h2 class="hidden_word">검색</h2>
+                        <form name="fsearch" method="post" onsubmit="return checkForm(this);" action="/">
+
+
+							<label for="search_lb" class="hidden_word">검색옵션 선택</label>
+                            <div class="select_design in_length100">
+								<select name="sfl" id="search_lb" title="검색옵션 선택">
+									<option value="all" selected="selected">제목+내용</option>
+									<option value="subject">제목</option>
+									<option value="content">내용</option>
+								</select>
+							</div>
+                            <label for="search_lb2" class="hidden_word">검색어 임력</label>
+                            <input type="search" id="search_lb2" class="in_s_box in_length200" name="stx" value="" placeholder="검색어 임력" title="검색어입력" onkeypress="JavaScript: if(event.keyCode==13)document.fsearch.submit();" />
+                            <button type="submit" class="btn_t2" value="값"><span>검색</span></button>
+<!--
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+							<label for="search_paging" class="hidden_word">보기 옵션</label>
+                            <div class="select_design in_length60">
+								<select name="" id="search_paging" title="검색옵션 선택">
+									<option value="all" selected="selected">10개</option>
+									<option value="subject">20개</option>
+									<option value="content">30개</option>
+								</select>
+							</div>
+                            <a href="#" class="btn_t3"><span>보기</span></a> -->
+                        </form>
+
+                        <script>
+                       //<![CDATA[
+
+                            function checkForm(form) {
+                                if(form.stx.value=="") {
+                                    alert("검색어를 입력해주세요.");
+                                    form.stx.focus();
+                                    return false;
+                                }
+                                return true;
+                            }
+
+                        //]]>
+
+                        </script>
+                    </article>
+				<!-- 검색끝 -->
+
+
+				<h3 class="h3_bul">페이징</h3>
+				<!-- 페이징 시작-->
+				<div class='paging'>
+					<span class="left_b">
+						<a href="#"><img src="commons/images/basic/btn_end.jpg" alt="최신"/></a>
+						<a href="#"><img src="commons/images/basic/btn_next.jpg" alt="다음"/></a>
+					</span>
+
+					<strong>1</strong>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+
+					<span class="right_b">
+						<a href="#"><img src="commons/images/basic/btn_prev.jpg" alt="이전"/></a>
+						<a href="#"><img src="commons/images/basic/btn_first.jpg" alt="마지막"/></a>
+					</span>
+				</div>
+				<!-- 페이징 끝 -->
+
+
+<br>
+
+
+
+				<h3 class="h3_bul">dl</h3>
+				<dl class="dl_450">
+					<dt>위&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;치</dt>
+						<dd>연수구 동춘동 210번지 일원</dd>
+
+					<dt>면&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;적</dt>
+						<dd>234,235.6㎡</dd>
+
+					<dt>계획인구</dt>
+						<dd>5,066인(1,986세대 : 공동 1,819, 단독 72, 임대 95)
+							<br>
+							<b>- 총밀도</b> : 196인/㏊, 용적률 : 197%, 층수 : 23층 이하
+						</dd>
+
+					<dt>사업방식</dt>
+						<dd>환지(평균 감보율 : 41.5%)</dd>
+
+					<dt>기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;간</dt>
+						<dd>2009. 4 ~ 2016. 3</dd>
+
+					<dt>사&nbsp;&nbsp;업&nbsp;&nbsp;비</dt>
+						<dd>58,500백만원(민간투자)</dd>
+
+					<dt>시&nbsp;&nbsp;행&nbsp;&nbsp;자</dt>
+						<dd>동춘2구역 도시개발사업 조합</dd>
+				</dl>
+
+				<div class="box_type1">
+					<pre>
+&lt;dl class="dl_450"&gt;
+	&lt;dt&gt;위&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;치&lt;/dt&gt;
+		&lt;dd&gt;연수구 동춘동 210번지 일원&lt;/dd&gt;
+
+	&lt;dt&gt;면&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;적&lt;/dt&gt;
+		&lt;dd&gt;234,235.6㎡&lt;/dd&gt;
+
+	&lt;dt&gt;계획인구&lt;/dt&gt;
+		&lt;dd&gt;5,066인(1,986세대 : 공동 1,819, 단독 72, 임대 95)
+			&lt;br&gt;
+			&lt;b&gt;- 총밀도&lt;/b&gt; : 196인/㏊, 용적률 : 197%, 층수 : 23층 이하
+		&lt;/dd&gt;
+
+	&lt;dt&gt;사업방식&lt;/dt&gt;
+		&lt;dd&gt;환지(평균 감보율 : 41.5%)&lt;/dd&gt;
+
+	&lt;dt&gt;기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;간&lt;/dt&gt;
+		&lt;dd&gt;2009. 4 ~ 2016. 3&lt;/dd&gt;
+
+	&lt;dt&gt;사&nbsp;&nbsp;업&nbsp;&nbsp;비&lt;/dt&gt;
+		&lt;dd&gt;58,500백만원(민간투자)&lt;/dd&gt;
+
+	&lt;dt&gt;시&nbsp;&nbsp;행&nbsp;&nbsp;자&lt;/dt&gt;
+		&lt;dd&gt;동춘2구역 도시개발사업 조합&lt;/dd&gt;
+&lt;/dl&gt;
+					</pre>
+				</div>
+
+				<h3 class="h3_bul">표</h3>
+				<div class="tb_type1 all_center mgn_t10">
+					<table>
+						<caption>표 예제</caption>
+						<colgroup>
+							<col style="width:30%;" />
+							<col style="width:70%;" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">###</th>
+								<td>###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td>###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td>###</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="box_type1">
+					<pre>
+
+&lt;div class="tb_type1 all_center mgn_t10"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;표 예제&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width:30%;" /&gt;
+			&lt;col style="width:70%;" /&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+					</pre>
+				</div>
+
+				<div class="tb_type2 all_center mgn_t10">
+					<table>
+						<caption>표 예제</caption>
+						<colgroup>
+							<col style="width:%;" />
+							<col style="width:%;" />
+							<col style="width:%;" />
+							<col style="width:%;" />
+							<col style="width:%;" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">###</th>
+								<th scope="col">###</th>
+								<th scope="col">###</th>
+								<th scope="col">###</th>
+								<th scope="col">###</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+							</tr>
+							<tr>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+							</tr>
+							<tr>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+								<td>###</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="box_type1">
+					<pre>
+&lt;div class="tb_type2 all_center mgn_t10"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;표 예제&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width:%;" /&gt;
+			&lt;col style="width:%;" /&gt;
+			&lt;col style="width:%;" /&gt;
+			&lt;col style="width:%;" /&gt;
+			&lt;col style="width:%;" /&gt;
+		&lt;/colgroup&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th scope="col"&gt;###&lt;/th&gt;
+				&lt;th scope="col"&gt;###&lt;/th&gt;
+				&lt;th scope="col"&gt;###&lt;/th&gt;
+				&lt;th scope="col"&gt;###&lt;/th&gt;
+				&lt;th scope="col"&gt;###&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+					</pre>
+				</div>
+
+
+				<div class="tb_type3 all_center mgn_t10">
+					<table>
+						<caption>표 예제</caption>
+						<colgroup>
+							<col style="width:20%;" />
+							<col style="width:30%;" />
+							<col style="width:20%;" />
+							<col style="width:30%;" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">###</th>
+								<td colspan="3">###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td colspan="3">###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td>###</td>
+								<th scope="row">###</th>
+								<td>###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td>###</td>
+								<th scope="row">###</th>
+								<td>###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td colspan="3">###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td colspan="3">###</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="box_type1">
+					<pre>
+&lt;div class="tb_type3 all_center mgn_t10"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;표 예제&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width:20%;" /&gt;
+			&lt;col style="width:30%;" /&gt;
+			&lt;col style="width:20%;" /&gt;
+			&lt;col style="width:30%;" /&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td colspan="3"&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td colspan="3"&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td colspan="3"&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td colspan="3"&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+					</pre>
+				</div>
+
+				<div class="tb_type4">
+					<table>
+						<caption>표 예제</caption>
+						<colgroup>
+							<col style="width:20%;" />
+							<col style="width:30%;" />
+							<col style="width:20%;" />
+							<col style="width:30%;" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">###</th>
+								<td>###</td>
+								<th scope="row">###</th>
+								<td>###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td>###</td>
+								<th scope="row">###</th>
+								<td>###</td>
+							</tr>
+							<tr>
+								<th scope="row">###</th>
+								<td colspan="3">###</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="box_type1">
+					<pre>
+&lt;div class="tb_type4"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;표 예제&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width:20%;" /&gt;
+			&lt;col style="width:30%;" /&gt;
+			&lt;col style="width:20%;" /&gt;
+			&lt;col style="width:30%;" /&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;###&lt;/th&gt;
+				&lt;td colspan="3"&gt;###&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+
+					</pre>
+				</div>
+
+				<div class="tb_type1 th_center mgn_t10 org_type">
+					<table>
+						<caption>맞춤형 솔루션 지원분야</caption>
+						<colgroup>
+							<col style="width:30%;" />
+							<col style="width:70%;" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">협동조합 정체성 실현을 위한 <br>7가지 원칙</th>
+								<td>
+									<ul class="float_wrap float_5050">
+										<li>· 제1원칙 : 자발적이고 개방적인 조합원제도</li>
+										<li>· 제2원칙 : 조합원의 민주적인 통제</li>
+										<li>· 제3원칙 : 조합원의 경제적 참가</li>
+										<li>· 제4원칙 : 자율과 독립</li>
+										<li>· 제5원칙 : 교육, 훈련 및 정보 제공</li>
+										<li>· 제6원칙 : 협동조합들 사이의 협동</li>
+										<li>· 제7원칙 : 지역사회에 기여  </li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="box_type1">
+					<pre>
+&lt;div class="tb_type1 th_center mgn_t10 org_type"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;맞춤형 솔루션 지원분야&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width:30%;" /&gt;
+			&lt;col style="width:70%;" /&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;협동조합 정체성 실현을 위한 &lt;br&gt;7가지 원칙&lt;/th&gt;
+				&lt;td&gt;
+					&lt;ul class="float_wrap float_5050"&gt;
+						&lt;li&gt;· 제1원칙 : 자발적이고 개방적인 조합원제도&lt;/li&gt;
+						&lt;li&gt;· 제2원칙 : 조합원의 민주적인 통제&lt;/li&gt;
+						&lt;li&gt;· 제3원칙 : 조합원의 경제적 참가&lt;/li&gt;
+						&lt;li&gt;· 제4원칙 : 자율과 독립&lt;/li&gt;
+						&lt;li&gt;· 제5원칙 : 교육, 훈련 및 정보 제공&lt;/li&gt;
+						&lt;li&gt;· 제6원칙 : 협동조합들 사이의 협동&lt;/li&gt;
+						&lt;li&gt;· 제7원칙 : 지역사회에 기여  &lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+					</pre>
+				</div>
+
+
+
+				<h3 class="h3_bul">select 설정</h3>
+				<div class="mgn_b30">
+
+					<label for="" class="lab_tit">생년월일</label><br>
+
+					<div class="select_design in_length100">
+						<select name="" id="" title="년도를 선택">
+							<option value="" selected="selected">2016</option>
+							<option value="">2015</option>
+						</select>
+					</div>
+
+					<br>
+					<br>
+
+					<div class="select_design in_length120">
+						<select name="" id="" title="년도를 선택">
+							<option value="" selected="selected">2016</option>
+							<option value="">2015</option>
+						</select>
+					</div>
+
+					<br>
+					<br>
+
+					<div class="select_design in_length140">
+						<select name="" id="" title="년도를 선택">
+							<option value="" selected="selected">2016</option>
+							<option value="">2015</option>
+						</select>
+					</div>
+
+					<br>
+					<br>
+
+					<div class="select_design in_length160">
+						<select name="" id="" title="년도를 선택">
+							<option value="" selected="selected">2016</option>
+							<option value="">2015</option>
+						</select>
+					</div>
+
+					<br>
+					<br>
+
+					<div class="select_design in_length180">
+						<select name="" id="" title="년도를 선택">
+							<option value="" selected="selected">2016</option>
+							<option value="">2015</option>
+						</select>
+					</div>
+				</div>
+
+
+
+				<h3 class="h3_bul">design-list</h3>
+
+					<ol class="design-list float_wrap five-type">
+						<li class="two-line"><p><span>&nbsp;</span>미숙아출생병원<br> 보건소통보</p></li>
+						<li class="two-line"><p><span>&nbsp;</span>대상자지원<br> 신청접수</p></li>
+						<li><p><span>&nbsp;</span>접수서류 심의</p></li>
+						<li><p><span>&nbsp;</span>지원결정통보</p></li>
+						<li><p><span>&nbsp;</span>지원결정통보</p></li>
+						<li><p><span>&nbsp;</span>지원결정통보</p></li>
+						<li><p><span>&nbsp;</span>지원결정통보</p></li>
+					</ol>
+
+
+					<ul class="down-list-design float_wrap">
+						<li>
+							<a href="#" title="다운로드">예진표(한국어)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(영어)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(일어)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(중국어)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(러시아어)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(몽골어)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(베트남어)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(캄보디아)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(태국어)</a>
+						</li>
+						<li>
+							<a href="#" title="다운로드">예진표(필리핀어)</a>
+						</li>
+					</ul>
+
+
+				<h3 class="h3_bul">기본 박스 설정</h3>
+
+				<div class="box_type1">
+					<h3>사단법인 마을과사회적경제</h3>
+					<p>16447 경기도 수원시 팔달구 고등로 62 2층 (442-880 고등동 56-6)<br>Tel. 031-252-6989  Fax. 031-241-6989  대표 이메일 1004ggms@daum.net</p>
+				</div>
+
+				<div class="box_type2">
+					<h3>사단법인 마을과사회적경제</h3>
+					<p>16447 경기도 수원시 팔달구 고등로 62 2층 (442-880 고등동 56-6)<br>Tel. 031-252-6989  Fax. 031-241-6989  대표 이메일 1004ggms@daum.net</p>
+				</div>
+
+				<div class="box_type3">
+					<h3>사단법인 마을과사회적경제</h3>
+					<p>16447 경기도 수원시 팔달구 고등로 62 2층 (442-880 고등동 56-6)<br>Tel. 031-252-6989  Fax. 031-241-6989  대표 이메일 1004ggms@daum.net</p>
+				</div>
+
+				<div class="box_type4">
+					<h3>사단법인 마을과사회적경제</h3>
+					<p>16447 경기도 수원시 팔달구 고등로 62 2층 (442-880 고등동 56-6)<br>Tel. 031-252-6989  Fax. 031-241-6989  대표 이메일 1004ggms@daum.net</p>
+				</div>
+
+				<div class="box_type5">
+					<h3>사단법인 마을과사회적경제</h3>
+					<p>16447 경기도 수원시 팔달구 고등로 62 2층 (442-880 고등동 56-6)<br>Tel. 031-252-6989  Fax. 031-241-6989  대표 이메일 1004ggms@daum.net</p>
+				</div>
+
+
+				<h3 class="h3_bul">점선 박스</h3>
+					<div class="box-dotted">
+						<ul class="basic_list2 five-type float_wrap">
+							<li><a href="#">민원서식 바로가기</a></li>
+							<li><a href="#">주민등록</a></li>
+							<li><a href="#">가족관계</a></li>
+							<li><a href="#">전입 및 확정일자</a></li>
+							<li><a href="#">제증명</a></li>
+							<li><a href="#">인감</a></li>
+							<li><a href="#">사회복지</a></li>
+							<li><a href="#">어디서나 민원</a></li>
+						</ul>
+					</div>
+					<div class="box-dotted blue">
+						<ul class="basic_list2 five-type float_wrap">
+							<li><a href="#">민원서식 바로가기</a></li>
+							<li><a href="#">주민등록</a></li>
+							<li><a href="#">가족관계</a></li>
+							<li><a href="#">전입 및 확정일자</a></li>
+							<li><a href="#">제증명</a></li>
+							<li><a href="#">인감</a></li>
+							<li><a href="#">사회복지</a></li>
+							<li><a href="#">어디서나 민원</a></li>
+						</ul>
+					</div>
+					<div class="box-dotted grey">
+						<ul class="basic_list2 five-type float_wrap">
+							<li><a href="#">민원서식 바로가기</a></li>
+							<li><a href="#">주민등록</a></li>
+							<li><a href="#">가족관계</a></li>
+							<li><a href="#">전입 및 확정일자</a></li>
+							<li><a href="#">제증명</a></li>
+							<li><a href="#">인감</a></li>
+							<li><a href="#">사회복지</a></li>
+							<li><a href="#">어디서나 민원</a></li>
+						</ul>
+					</div>
+				<h3 class="h3_bul">컨텐츠 설정</h3>
+
+
+				<div class="text_box">
+					<div class="text_box_in">
+						<p class="align_center col_blue">불량·노후주택의 정비, 계획적이고 체계적인 도시개발을 통한 공공시설의 확보로 쾌적한 도시환경조성 및 공공복리의 증진과 낙후지역의 균형발전 도모</p>
+					</div>
+				</div><!--//text_box-->
+
+
+<br><br><br>
+
+---------------------------------------------------------
+				<h3 class="h3_bul">좌이미지 우 컨텐츠</h3>
+
+				<div class="photo_subs float_wrap">
+					<p class="left_img"><img src="commons/images/basic/temp_03.jpg" alt="이미지설명"/></p>
+
+					<div class="right_table">
+						컨텐츠/ <br>
+						사이즈 변경시 photo_subs 에 클래스 size-50pro
+
+					</div>
+				</div><!--//photo_subs-->
+
+				<h3 class="h3_bul">좌이미지 우 기본표</h3>
+
+				<div class="photo_subs float_wrap">
+					<p class="left_img"><img src="commons/images/basic/temp_03.jpg" alt="이미지설명"/></p>
+
+					<div class="right_table">
+						<div class="tb_type1">
+							<table>
+								<caption>표 제목</caption>
+								<colgroup>
+									<col style="width:20%"/>
+									<col style="width:80%"/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">목적</th>
+										<td>
+											<ul class="basic_list1">
+												<li>basic_list1</li>
+												<li>basic_list1</li>
+												<li>basic_list1</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">시기</th>
+										<td>연중 (단, 토요일, 공휴일 및 국경일은 제외)</td>
+									</tr>
+									<tr>
+										<th scope="row">방법</th>
+										<td>아침 활동 (05:00 ~ 07:10)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div><!--//photo_subs-->
+
+				<div class="photo_subs float_wrap food-list-view">
+					<p class="left_img"><img src="commons/images/basic/temp00.gif" alt="이미지설명"/></p>
+
+					<div class="right_table">
+						<div class="tb_type1">
+							<table>
+								<caption>표 제목</caption>
+								<colgroup>
+									<col style="width:20%"/>
+									<col style="width:80%"/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">업태</th>
+										<td>한식</td>
+									</tr>
+									<tr>
+										<th scope="row">주소</th>
+										<td>자양1동 자양번영로 44 <a href="#" class="btn_green"><span>지도보기</span></a></td>
+									</tr>
+									<tr>
+										<th scope="row">전화번호</th>
+										<td>446-1149</td>
+									</tr>
+									<tr>
+										<th scope="row">영업주</th>
+										<td>-</td>
+									</tr>
+									<tr>
+										<th scope="row">신고번호</th>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div><!--//photo_subs-->
+
+				<h3 class="h3_bul">이미지테두리</h3>
+
+					<p class="img_box_opacity"><span>&nbsp;</span>
+						<img src="commons/images/basic/temp03.jpg" alt="이미지" />
+					</p>
+
+
+
+                    <h3 class="h3_bul">좌이미지 우 표</h3>
+                    <div class="photo_subs float_wrap">
+						<div class="left_img">
+
+							<div id="slideshow-1">
+								<div id="cycle-1" class="cycle-slideshow"
+									data-cycle-slides="> div"
+									data-cycle-timeout="0"
+									data-cycle-prev="#slideshow-1 .cycle-prev"
+									data-cycle-next="#slideshow-1 .cycle-next"
+									data-cycle-caption="#slideshow-1 .custom-caption"
+									data-cycle-caption-template="Slide {{slideNum}} of {{slideCount}}"
+									data-cycle-fx="tileBlind"
+									>
+									<div><img src="commons/images/basic/temp5.jpg" alt="사진"></div>
+									<div><img src="commons/images/basic/temp5.jpg" alt="사진"></div>
+									<div><img src="commons/images/basic/temp5.jpg" alt="사진"></div>
+									<div><img src="commons/images/basic/temp5.jpg" alt="사진"></div>
+								</div>
+							</div>
+
+							<div id="slideshow-2">
+								<div id="cycle-2" class="cycle-slideshow"
+									data-cycle-slides="> a"
+									data-cycle-timeout="0"
+									data-cycle-prev="#slideshow-2 .cycle-prev"
+									data-cycle-next="#slideshow-2 .cycle-next"
+									data-cycle-caption="#slideshow-2 .custom-caption"
+									data-cycle-caption-template="Slide {{slideNum}} of {{slideCount}}"
+									data-cycle-fx="carousel"
+									data-cycle-carousel-visible="4"
+									data-cycle-carousel-fluid=true
+									data-allow-wrap="false"
+									>
+									<a href="#" onclick="return false;"><img src="commons/images/basic/temp5.jpg" alt="사진" width="89" height="68"></a>
+									<a href="#" onclick="return false;"><img src="commons/images/basic/temp5.jpg" alt="사진" width="89" height="68"></a>
+									<a href="#" onclick="return false;"><img src="commons/images/basic/temp5.jpg" alt="사진" width="89" height="68"></a>
+									<a href="#" onclick="return false;"><img src="commons/images/basic/temp5.jpg" alt="사진" width="89" height="68"></a>
+								</div>
+
+							</div>
+
+
+							<script>
+							jQuery(document).ready(function($){
+
+							var slideshows = $('.cycle-slideshow').on('cycle-next cycle-prev', function(e, opts) {
+								// advance the other slideshow
+								slideshows.not(this).cycle('goto', opts.currSlide);
+							});
+
+							$('#cycle-2 .cycle-slide').click(function(){
+								var index = $('#cycle-2').data('cycle.API').getSlideIndex(this);
+								slideshows.cycle('goto', index);
+							});
+
+							});
+							</script>
+
+						</div>
+
+						<div class="right_table">
+
+							<h3 class="right_table__h3">못골순대</h3>
+							<div class="tb_type1">
+								<table>
+									<caption>못골순대</caption>
+									<colgroup>
+										<col style="width:18%"/>
+										<col style="width:82%"/>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">전화</th>
+											<td>031-256-4587</td>
+										</tr>
+										<tr>
+											<th scope="row">주소</th>
+											<td>수원시 팔달구 중부대로 39번길 3-8</td>
+										</tr>
+										<tr>
+											<th scope="row">시간</th>
+											<td>평일 09:00 ~ 21:00 | 주말 09:00 ~ 21:00</td>
+										</tr>
+										<tr>
+											<th scope="row">이용정보</th>
+											<td>온누리상품권가능</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div><!--//photo_subs-->
+
+                    <h3 class="h3_bul">좌이미지 우 표2</h3>
+
+					<div class="photo_subs_wrap">
+						<div class="photo_subs other_ver float_wrap">
+							<p class="left_img"><img src="commons/images/basic/temp_06.jpg" alt="이미지설명"/></p>
+
+							<div class="right_table">
+							   <h4>동시대마감 이재효 조각전</h4>
+							   <p>동시대 마감</p>
+
+							   <span class="pos_links"><a href="#">프로그램보기</a></span>
+
+							</div>
+						</div><!--//photo_subs-->
+
+						<div class="photo_subs other_ver float_wrap">
+							<p class="left_img"><img src="commons/images/basic/temp_06.jpg" alt="이미지설명"/></p>
+
+							<div class="right_table">
+							   <h4>동시대마감 이재효 조각전</h4>
+							   <p>동시대 마감</p>
+
+							   <span class="pos_links"><a href="#">프로그램보기</a></span>
+
+							</div>
+						</div><!--//photo_subs-->
+					</div>
+                    <!-- 사진, 표 -->
+
+
+                    <!-- 사진, 표 -->
+<!-- FAQ -->
+						<h3 class="h3_bul">질의 항목 어쩌구 저쩌구</h3>
+						<br/>
+
+
+					<div class="faq2">
+						<dl>
+							<dt><b>Q.</b> 수료증의 테두리, 인장 등이 출력되지 않아요.</dt>
+							<dd><b>A.</b> 도구 > 인터넷 옵션 > 고급 > 인쇄 > 배경색 및 이미지 인쇄 > 체크 > 이수증 재출력</dd>
+						</dl>
+						<dl>
+							<dt><b>Q.</b> 인터넷 옵션 설정을 변경해도 테두리 등이 인쇄되지 않아요.</dt>
+							<dd><b>A.</b> 시중 프린터는 기기별로 사이즈가 상이하여 정확한 사이즈를 알려드릴 수 없습니다. 여백 및 인쇄 배율을 조정하고 출력해주세요.</dd>
+						</dl>
+					</div>
+
+
+					<div class="faq3">
+						<dl>
+							<dt><b class="f-q">Q</b> 원인 병원체는 무엇인가요?</dt>
+							<dd><b class="f-a">A</b> 가장 흔한 원인은 콕사키바이러스A16이며, 엔테로바이러스에 의해서도 발병</dd>
+						</dl>
+						<dl>
+							<dt><b class="f-q">Q</b> 인터넷 옵션 설정을 변경해도 테두리 등이 인쇄되지 않아요.</dt>
+							<dd><b class="f-a">A</b> 시중 프린터는 기기별로 사이즈가 상이하여 정확한 사이즈를 알려드릴 수 없습니다. 여백 및 인쇄 배율을 조정하고 출력해주세요.</dd>
+						</dl>
+					</div>
+
+					<div class="small-login-box-design">
+						<p class="small-login-box-design__in">
+							<label for="small-login1">아이디</label>
+								<input type="text" id="small-login1" class="in_box in_length120"/>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<label for="small-login2">비밀번호</label>
+								<input type="password" id="small-login2" class="in_box in_length120"/>
+						</p>
+
+						<a href="#" class="log-box-design__btn">로그인</a>
+
+						<p class="small-login-box-design__in2">- 해당 내용을 입력하신 후 로그인 버튼을 누르시면 <strong class="col_yellow">「공중위생 자율점검」</strong>을 작성하실 수 있습니다.</p>
+					</div>
+
+					<div class="round-box-design bg-type1">
+						<p class="mgn_b5">보건소 공중위생 자율점검 로그인 후 점검표를 작성하여 조장하시면 보건소에 제출하신 것처럼 갈음합니다.</p>
+						<p class="mgn_b30">업소보관용(상반기/하반기) 자율점건은 아래 <span class="yellow-accent-design">“자율점검표(업소보관용)”</span> 다운 받은 후 작성하셔서 업소내 자체보관하시기 바랍니다.</p>
+						<div class="round-box-design__in">
+							<h3>담당연락처</h3>
+							<p class="mgn_b20">- 보건소 보건위생과 공중식품안전팀 : ☎02-450-1918</p>
+							<a href="#" class="btn_t5"><span>자율점검표 다운로드 <em> </em></span></a>
+						</div>
+					</div>
+
+
+				<h3 class="h3_bul">게시판 뷰페이지 추천 댓글</h3>
+					<!-- 추천, 댓글 -->
+					<div class="updown-box">
+						<a href="#" onclick="actionArticle('rate-up','140258343938982');return false;">
+							<img src="commons/images/basic/up-icon.jpg" alt="추천"> 추천 (100)
+						</a>
+						&nbsp;&nbsp;&nbsp;
+						<a href="#" onclick="actionArticle('rate-down','140258343938982');return false;">
+							<img src="commons/images/basic/down-icon.jpg" alt="비추천"> 비추천 (100)
+						</a>
+						&nbsp;&nbsp;&nbsp;
+						-1(1명)
+						<p class="star-sel-box">
+
+							<span>
+							<!-- 기존 소스 붙여넣음 -->
+								<img src="commons/images/basic/star_on.gif" name="iStar01" onclick="actionArticle('star','140258343938982,2')" style="cursor:pointer;" onmouseover="starProgress(this);" align="absmiddle">
+
+								<img src="commons/images/basic/star_on.gif" name="iStar02" onclick="actionArticle('star','140258343938982,4')" style="cursor:pointer;" onmouseover="starProgress(this);" align="absmiddle">
+
+								<img src="commons/images/basic/star_on.gif" name="iStar03" onclick="actionArticle('star','140258343938982,6')" style="cursor:pointer;" onmouseover="starProgress(this);" align="absmiddle">
+
+								<img src="commons/images/basic/star_off.gif" name="iStar04" onclick="actionArticle('star','140258343938982,8')" style="cursor:pointer;" onmouseover="starProgress(this);" align="absmiddle">
+
+								<img src="commons/images/basic/star_off.gif" name="iStar05" onclick="actionArticle('star','140258343938982,10')" style="cursor:pointer" ;="" onmouseover="starProgress(this);" align="absmiddle">
+
+							</span>
+							&nbsp;&nbsp;&nbsp;
+							0점 (0명)
+						</p>
+					</div>
+					<div class="reply-wrap">
+						<div class="reply-wrap__top">
+							<a href="#">대사 증후군 예방 및 치료</a>
+						</div>
+						<ul class="reply-wrap__result float_wrap">
+							<li>
+								<div class="reply-wrap__result__div">
+									<strong>홍길동</strong>
+									<p class="reply-wrap__result__comment-line">댓글내용입니다.</p>
+									<p class="reply-wrap__result__ip-line">125.130.18.***</p>
+									<div class="reply-wrap__result__date-line">
+										2017-07-18 | 16:44:53
+										<a href="#" class="re-reply-btn">REPLY</a>
+										<a href="#" class="reply-del-btn">DEL</a>
+									</div>
+									<div class="reply-del-info-box">
+										<h3>삭제 정보입력</h3>
+										<p class="mgn_b5">
+										이름<br>
+											<input type="text" id="" class="in_box in_length150" title="이름"/>
+										</p>
+										<p class="mgn_b10">
+										비밀번호<br>
+											<input type="password" id="" class="in_box in_length150" title="비밀번호"/>
+										</p>
+										<p class="align_center">
+											<a href="#" class="btn_t4"><span>확인</span></a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="reply-wrap__result__div">
+									<strong>홍길동</strong>
+									<p class="reply-wrap__result__comment-line">댓글내용입니다.</p>
+									<p class="reply-wrap__result__ip-line">125.130.18.***</p>
+									<div class="reply-wrap__result__date-line">
+										2017-07-18 | 16:44:53
+										<a href="#" class="re-reply-btn">REPLY</a>
+										<a href="#" class="reply-del-btn">DEL</a>
+									</div>
+									<div class="reply-del-info-box">
+										<h3>삭제 정보입력</h3>
+										<p class="mgn_b5">
+										이름<br>
+											<input type="text" id="" class="in_box in_length150" title="이름"/>
+										</p>
+										<p class="mgn_b10">
+										비밀번호<br>
+											<input type="password" id="" class="in_box in_length150" title="비밀번호"/>
+										</p>
+										<p class="align_center">
+											<a href="#" class="btn_t4"><span>확인</span></a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="reply-line2"> <!-- 대댓글 -->
+								<div class="reply-wrap__result__div">
+									<strong>홍길동</strong>
+									<p class="reply-wrap__result__comment-line">댓글내용입니다.</p>
+									<p class="reply-wrap__result__ip-line">125.130.18.***</p>
+									<div class="reply-wrap__result__date-line">
+										2017-07-18 | 16:44:53
+										<a href="#" class="re-reply-btn">REPLY</a>
+										<a href="#" class="reply-del-btn">DEL</a>
+									</div>
+									<div class="reply-del-info-box">
+										<h3>삭제 정보입력</h3>
+										<p class="mgn_b5">
+										이름<br>
+											<input type="text" id="" class="in_box in_length150" title="이름"/>
+										</p>
+										<p class="mgn_b10">
+										비밀번호<br>
+											<input type="password" id="" class="in_box in_length150" title="비밀번호"/>
+										</p>
+										<p class="align_center">
+											<a href="#" class="btn_t4"><span>확인</span></a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="reply-line3"> <!-- 대대댓글 -->
+								<div class="reply-wrap__result__div">
+									<strong>홍길동</strong>
+									<p class="reply-wrap__result__comment-line">댓글내용입니다.</p>
+									<p class="reply-wrap__result__ip-line">125.130.18.***</p>
+									<div class="reply-wrap__result__date-line">
+										2017-07-18 | 16:44:53
+										<a href="#" class="re-reply-btn">REPLY</a>
+										<a href="#" class="reply-del-btn">DEL</a>
+									</div>
+									<div class="reply-del-info-box">
+										<h3>삭제 정보입력</h3>
+										<p class="mgn_b5">
+										이름<br>
+											<input type="text" id="" class="in_box in_length150" title="이름"/>
+										</p>
+										<p class="mgn_b10">
+										비밀번호<br>
+											<input type="password" id="" class="in_box in_length150" title="비밀번호"/>
+										</p>
+										<p class="align_center">
+											<a href="#" class="btn_t4"><span>확인</span></a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="reply-line4"> <!-- 대대댓글 -->
+								<div class="reply-wrap__result__div">
+									<strong>홍길동</strong>
+									<p class="reply-wrap__result__comment-line">댓글내용입니다.</p>
+									<p class="reply-wrap__result__ip-line">125.130.18.***</p>
+									<div class="reply-wrap__result__date-line">
+										2017-07-18 | 16:44:53
+										<a href="#" class="re-reply-btn">REPLY</a>
+										<a href="#" class="reply-del-btn">DEL</a>
+									</div>
+									<div class="reply-del-info-box">
+										<h3>삭제 정보입력</h3>
+										<p class="mgn_b5">
+										이름<br>
+											<input type="text" id="" class="in_box in_length150" title="이름"/>
+										</p>
+										<p class="mgn_b10">
+										비밀번호<br>
+											<input type="password" id="" class="in_box in_length150" title="비밀번호"/>
+										</p>
+										<p class="align_center">
+											<a href="#" class="btn_t4"><span>확인</span></a>
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div><!--// reply-wrap-->
+					<script>
+						function reReply() {
+							jQuery('.reply-del-btn').on('click',function(){
+								jQuery(this).closest('.reply-wrap__result__div').children('.reply-del-info-box').toggleClass('on');
+								return false;
+							})
+						}
+							reReply();
+					</script>
+
+					<div class="reply-input-wrap">
+						<div class="mgn_b5">
+							<label for="reply-name">이름</label>
+								<input type="text" id="reply-name" class="in_box in_length150"/>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+							<label for="reply-pass">비밀번호</label>
+								<input type="password" id="reply-pass" class="in_box in_length150"/>
+
+							<span class="reply-input-wrap__ok">
+								<a href="#" class="btn_green"><span>댓글등록</span></a>
+							</span>
+						</div>
+						<p><strong>댓글내용입니다.</strong>... 글의 답변을 답니다</p>
+						<div class="reply-input-wrap__text">
+							<div class="in_text">
+								<label for="reply-textarea" class="hidden_word">댓글 내용입력</label>
+								<textarea name="" id="reply-textarea" placeholder="내용을 입력하세요"></textarea>
+							</div>
+						</div>
+					</div><!--// reply-input-wrap -->
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="right-img-box float_wrap">
+						<div class="right-img-box__left">
+							<h3 class="h3_bul2">학교정보화현장지원시스템은?</h3>
+							<p>학교정보화현장지원시스템은 정보담당 교직원의 업무처리 고충 해소를 위해 정보화업무 정보제공, 맞춤형 현장지원서비스, 현장 업무담당자간 소통게시판 제공 등의 서비스를 제공합니다. </p>
+						</div>
+						<div class="right-img-box__right">
+							<img src="commons/images/global/site-info-1.jpg" alt="학교정보화현장지원시스템">
+						</div>
+					</div>
+
+					<div class="left-img-box float_wrap">
+						<div class="left-img-box__right">
+							<h3 class="h3_bul2">학교정보화현장지원시스템은 <br>정보화업무지원 통합신청 창구입니다.</h3>
+							<p>경기도교육청, 25개 교육지원청, 경기도교육정보기록원 정보화업무담당자간 협업을 통해 통합 현장지원 체계를 마련하고, 현장지원시스템을 통해 학교 업무담당자의 요청에 따라 지역의 여건과 학교 특성을 고려한 현장 맞춤형 지원서비스를 제공합니다. </p>
+						</div>
+						<div class="left-img-box__left">
+							<img src="commons/images/global/site-info-2.jpg" alt="학교정보화현장지원시스템">
+						</div>
+					</div>
+
+				<!-- +++++++++++++++++++++++++ contents +++++++++++++++++++++++++ -->
+				</div><!--//cont-in -->
+			</section>
+
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div class="footer_in_wrap">
+			<p class="foot_img"><img src="commons/images/global/foot_img.png" alt="이지비즈"/></p>
+			<div class="copy_box">
+				<ul class="float_wrap">
+					<li><a href="#">
+						<strong>개인정보처리방침</strong>
+					</a></li>
+					<li><a href="#">이메일무단수집거부</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</div><!--//copy_box -->
+			<div class="copy_box2">
+				<address class="item1 float_wrap">(16229)경기도 수원시 영통구 광교로 107  사업자등록번호 : 124-82-08755<br>
+				TEL :  <span class="col_red"> 02-2109-2500</span>  FAX : 02-2109-2599
+				</address>
+				<p class="item2">COPYRIGHT(C) 2018 EGBIZ.OR.KR ALL RIGHTS RESERVED.</p>
+			</div><!--//copy_box2 -->
+
+			<!--
+			<article class="foot_select">
+				<h3 class="hidden_word">관련기관 바로가기</h3>
+				<div class="mgn_b5">
+					<label for="search_f" class="hidden_word">관련기관 바로가기 선택</label>
+					<div class="select_design in_length150">
+
+						<select name="" id="search_f">
+							<option value="" selected="selected">관련기관 바로가기</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+						</select>
+					</div>
+					<a href="#" class="select_go" onclick="window.open(jQuery('#search_f option:selected').val());" title="새창열림">이동
+					</a>
+				</div>
+
+			</article>
+			-->
+		</div>
+
+
+	</footer>
+	<script>title_copy('이지비즈');// title 출력 부분 </script>
+</body>
+</html>

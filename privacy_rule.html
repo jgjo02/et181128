@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html dir="ltr"lang="ko-KR" class="ie6 lte-ie9 lte-ie8 lte-ie7 lte-ie6"><![endif]-->
+<!--[if lte IE 7]><html dir="ltr"lang="ko-KR" class="ie7 lte-ie9 lte-ie8 lte-ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr"lang="ko-KR" class="ie8 lte-ie9 lte-ie8"><![endif]-->
+<!--[if IE 9]><html dir="ltr"lang="ko-KR" class="ie9 lte-ie9"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html dir="ltr" lang="ko-KR"><!--<![endif]-->
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="이지비즈"/>
+	<meta name="author" content="jun-doo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/board.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/global.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/mobile_global.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="commons/css/mobile.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="commons/css/print.css" />
+
+	<script src="commons/js/jquery.js"></script>
+	<script src="commons/js/jquery-migrate-1.2.1.js"></script>
+	<script src="commons/js/jquery.cookie.js"></script>
+	<script src="commons/js/site.js"></script>
+	<script src="commons/js/jquery.cycle.2.js"></script>
+	<script src="commons/js/jquery.cycle.2.carousel.js"></script>
+	<script src="commons/js/jquery.cycle.2.swipe.js"></script>
+	<script src="commons/js/jquery.flexslider.js"></script>
+
+	<script src="commons/js/fakeselect.js"></script>
+    <!--[if lt IE 9]>
+        <script src="commons/js/html5shiv.js"></script>
+    <![endif]-->
+
+
+    <title>▦ 이지비즈</title>
+
+</head>
+<body id="subpage">
+	<!-- 헤더 디자인 -->
+	<header class="header">
+
+		<article class="skiptoContent">
+			<h2 class="hidden_word">바로가기 메뉴</h2>
+			<div>
+				<strong>바로가기 메뉴</strong>
+				<span class="skip_item01"><a href="#cont_sbj" onclick="document.getElementById('cont_sbj').tabIndex = -1;document.getElementById('cont_sbj').focus();jQuery('#cont_sbj').addClass('selected');return false;">본문내용 바로가기</a></span>
+				<span class="skip_item02"><a href="#gnb-go" onclick="document.getElementById('gnb-go').tabIndex = -1;document.getElementById('gnb-go').focus();return false;">메인메뉴 바로가기</a></span>
+			</div>
+		</article>
+		<script>gnb_nav();</script>
+
+
+		<article class="top-nav">
+			<h2 class="hidden_word">주요안내</h2>
+			<div class="top-nav__box">
+
+
+				<div class="top-nav__fav2">
+					<a href="#">HOME</a>
+					<a href="#">회원가입</a>
+					<a href="#">로그인</a>
+					<a href="#">사이트맵</a>
+					<!--
+					<span class="font-size-box">
+						<h3>FONT SIZE</h3>
+						<a href="#" class="font-size-item" onclick="js_font_plus();">
+							<img src="commons/images/global/font-plus.png" alt="폰트크기 키움" />
+						</a>
+						<span class="size-realtime s1">100%</span>
+						<span class="size-realtime s2">110%</span>
+						<span class="size-realtime s3">120%</span>
+						<span class="size-realtime s4">130%</span>
+						<span class="size-realtime s5">140%</span>
+						<a href="#" class="font-size-item" onclick="js_font_minus();">
+							<img src="commons/images/global/font-minus.png" alt="폰트크기 줄임" />
+						</a>
+					</span> -->
+
+				</div>
+
+				<article class="top-search">
+					<h2 class="hidden_word">검색</h2>
+					<div class="top-search__in">
+						<form name="searchForm" method="get" action="/cop/bbs/selectSearchTotalList.do" onsubmit="return checkSearch(this);" >
+							<label for="main_search2" class="hidden_word">검색어 입력</label>
+							<input type="search" name="searchKeyword" id="searchKeyword" placeholder="검색하세요" class="m_se_btn" value=""/>
+							<input type="image" src="commons/images/global/gnb-search-btn.jpg" alt="검색" />
+						</form>
+
+					</div>
+				</article>
+			</div><!--// top-nav__box -->
+
+		</article>
+
+		<div class="header__wrap">
+
+
+			<div class="header__wrap__h1">
+				<h1>
+					<a href="index.html" class="title-item"><img src="commons/images/global/title.png" alt="이지비즈" /></a>
+				</h1>
+			</div>
+
+			<div class="gnb nav-top" id="gnb-go">
+				<h2 class="hidden_word">메인메뉴</h2>
+				<ul class="gnb-ul float_wrap nav-menu">
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">사업신청</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>분류별지원사업</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>지역별지원사업</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사업지원안내</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">Egbiz 소개</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>Egbiz 소개</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>관련사이트</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사업공고등록안내</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">정보광장</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>새소식</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>공지사항</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>입찰정보</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>우수기업탐방</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>정보</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>해외 플랫폼 정보</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">이용안내</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>홈페이지 이용안내</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>회원가입안내</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>자주 묻는 질문</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사용자매뉴얼</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>질의응답</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="gnb-menu nav-item t_menu">
+						<a href="#">회원서비스</a>
+						<div class="sub-nav m_t_wrap">
+							<div class="sub-nav__box m_t_box">
+								<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+									<li class="sub-nav__box__list m_depth float_wrap">
+										<a href="http://daum.net"><span>회원가입</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>로그인</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>아이디/비밀번호찾기</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>이용약관</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>개인정보보호방침</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>이메일무단수집거부</span></a>
+									</li>
+									<li class="sub-nav__box__list float_wrap">
+										<a href="#"><span>사이트맵</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+
+
+
+				</ul>
+			</div>
+
+			<script>
+				gnb_type(); //메뉴 숫자 클래스 삽입
+				//sizeComp(); //좌우 패딩형 사이즈 조절
+			</script>
+		</div>
+
+
+
+		<!-- 모바일 메뉴 -->
+		<div class="mobile_top_nav">
+			<div class="mobile_icon">
+				<a href="#gnb_nav_mobile" class="m_open_btn mobile_on_off"><img src="commons/images/mobile/menu_open.png" alt="메뉴보기" /></a>
+				<!-- <a href="#" class="m_s_btn"><img src="commons/images/mobile/menu_search.png" alt="검색" /></a> -->
+			</div>
+			<div class="mobile_top_nav__in">
+				<nav id="gnb_nav_mobile">
+					<h2 class="hidden_word">menu</h2>
+					<ul class="gnb-ul float_wrap nav-menu">
+
+						<!-- 위의 메뉴와 똑같이. but, 최상단 a의 링크는 뺀다. -->
+						<li class="gnb-menu nav-item t_menu">
+								<a href="#">사업신청</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>분류별지원사업</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>지역별지원사업</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사업지원안내</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">Egbiz 소개</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>Egbiz 소개</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>관련사이트</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사업공고등록안내</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">정보광장</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>새소식</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>공지사항</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>입찰정보</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>우수기업탐방</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>정보</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>해외 플랫폼 정보</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">이용안내</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>홈페이지 이용안내</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>회원가입안내</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>자주 묻는 질문</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사용자매뉴얼</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>질의응답</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="gnb-menu nav-item t_menu">
+								<a href="#">회원서비스</a>
+								<div class="sub-nav m_t_wrap">
+									<div class="sub-nav__box m_t_box">
+										<ul class="sub-nav__box__ul m_t_group float_wrap">
+
+											<li class="sub-nav__box__list m_depth float_wrap">
+												<a href="http://daum.net"><span>회원가입</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>로그인</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>아이디/비밀번호찾기</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>이용약관</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>개인정보보호방침</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>이메일무단수집거부</span></a>
+											</li>
+											<li class="sub-nav__box__list float_wrap">
+												<a href="#"><span>사이트맵</span></a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</li>
+
+						<!-- -->
+
+
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<span class="mobile-close mobile_on_off"><a href="#">닫기</a></span>
+		<script>
+
+
+			mobile_menu();
+
+
+			function mobile_tc(){
+			$('#gnb_nav_mobile li.taphover').on("touchstart", function (e) {
+			    "use strict"; //satisfy the code inspectors
+			    var link = $(this); //preselect the link
+			    if (link.hasClass('selected')) {
+			        return true;
+			    } else {
+			        link.addClass("selected");
+			        $('#gnb_nav_mobile li.taphover').not(this).removeClass("selected");
+			        e.preventDefault();
+			        return false; //extra, and to make sure the function has consistent return points
+			    }
+			});
+			}
+
+
+			(function(window, document, $) {
+
+				})(window, document, jQuery);
+
+				if(navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
+
+				//   mobile_tc(); //모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+
+				}
+
+
+				function mainGnbMobile() {
+						var oldIndex = 0;
+						jQuery('.mobile_top_nav li.gnb-menu').click(function() {
+							var thisIndex = jQuery('.mobile_top_nav li.gnb-menu').index(this);
+
+							jQuery('.mobile_top_nav div.sub-nav').removeClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').removeClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').removeClass('on');
+
+							jQuery('.mobile_top_nav div.sub-nav').eq(thisIndex).addClass('selected');
+							jQuery('.mobile_top_nav li.gnb-menu').eq(thisIndex).addClass('selected');
+
+							//return false;
+						});
+
+
+				};
+
+				mainGnbMobile();
+
+		</script>
+		<p class="resol">
+		</p>
+		<script>
+		$(document).ready(function() {
+			var winHigh = $(window).outerHeight();
+			var winWidth = $(window).width();
+			jQuery('.resol').text('width : ' + winWidth + ', ' + 'height : ' + winHigh);
+
+		});
+		$(window).resize(function() {
+			var winHigh = $(window).outerHeight();
+			var winWidth = $(window).width();
+			jQuery('.resol').text('width : ' + winWidth + ', ' + 'height : ' + winHigh);
+		});
+		</script>
+	</header>
+	<!--// 헤더 디자인 -->
+
+
+
+	<div class="sub-page-container wrap float-wrap">
+
+		<!-- visual-->
+		<div class="visual_wrap">
+			<div class="visual__in"></div>
+		</div>
+		<div class="sub-page-container__wrap float_wrap">
+
+			<!-- sidebar -->
+			<nav id="sidebar" class="sidebar">
+				<h2 id="menu_sbj" class="sidebar__h2">egbiz 소개 <a href="#">메뉴열기</a></h2>
+				<div class="sidebar__wrap side_in_wrap">
+
+					<ul class="side-list side_ul lnb-bar-ul float_wrap">
+
+						<li class="side-list__li lnb-menu on">							<!-- on 클래스 위치 -->
+
+							<span><a href="#">보건소 소개</a></span>
+
+							<div class="side-list__li__inbox">
+								<ul>
+									<li class="spp__in">
+										<a href="#">암표지자검사/감상선검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">골다공증(골밀도)검진</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">성병검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">결핵검사</a>
+									</li>
+									<li class="spp__in on">					<!-- on 클래스 위치 -->
+										<a href="#">에이즈검사</a>
+										<ul class="spp__in__small">
+											<li class="on">					<!-- on 클래스 위치 -->
+												<a href="#">3차 메뉴</a>
+												<!--
+												<ul class="spp__in__small__4th">
+													<li class="on"><a href="#">4차 메뉴 on클래스위치</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+												</ul>
+												-->
+
+											</li>
+											<li><a href="#">3차 메뉴</a></li>
+											<li><a href="#">3차 메뉴</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="side-list__li lnb-menu on">
+							<span><a href="#">건강검진</a></span>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">대사증후군검진</a></span>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">예방접종</a></span>
+
+							<div class="side-list__li__inbox">
+								<ul>
+									<li class="spp__in">
+										<a href="#">암표지자검사/감상선검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">골다공증(골밀도)검진</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">성병검사</a>
+									</li>
+									<li class="spp__in">
+										<a href="#">결핵검사</a>
+									</li>
+									<li class="spp__in">					<!-- on 클래스 위치 -->
+										<a href="#">에이즈검사</a>
+										<ul class="spp__in__small">
+											<li class="">					<!-- on 클래스 위치 -->
+												<a href="#">3차 메뉴</a>
+												<ul class="spp__in__small__4th">
+													<li class=""><a href="#">4차 메뉴</a></li><!-- on 클래스 위치 -->
+													<li><a href="#">4차 메뉴</a></li>
+													<li><a href="#">4차 메뉴</a></li>
+												</ul>
+
+											</li>
+											<li><a href="#">3차 메뉴</a></li>
+											<li><a href="#">3차 메뉴</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="side-list__li lnb-menu">
+							<span><a href="#">진료내역조회</a></span>
+						</li>
+
+
+					</ul>
+				</div><!--//side_in_wrap -->
+
+				<script>
+					jQuery(document).ready(function() {
+						side_open();	// 메뉴 클릭시 세부메뉴가 있을경우 펼침으로 동작.
+						//side_open2(); // 메뉴 클릭시 메뉴 바로이동을 원할 경우 활성화함. side_open(); 는 비활성화로.
+						mobile_ver_menu();
+					});
+				</script>
+			</nav>
+			<!-- sidebar -->
+
+			<!-- sub-contents -->
+			<section class="sub-contents">
+
+				<article class="sub-contents__top">
+					<!-- 컨텐츠 제목, 로케이션 -->
+					<div class="location-box">
+						<p class="location-box__cont float_wrap">
+							<span><a href="#" class="loc-home">HOME</a></span>
+							<span>개인정보처리방침</span>
+						</p>
+					</div>
+					<h2 id="cont_sbj" class="sub-tit loc_tit">개인정보처리방침</h2>
+
+					<div class="sub-sns-box-wrap">
+						<p class="sub-sns-box">
+							<a href="#" class="sns-opener" title="sns 공유">
+								<img src="commons/images/basic/n-sns-opener-new.png" alt="공유">
+							</a>
+							<span class="sns-little-box">
+								<a href="#"><img src="commons/images/basic/n-sns-twit.png" alt="트위터"></a>
+								<a href="#"><img src="commons/images/basic/n-sns-fb.png" alt="페이스북"></a>
+							</span>
+							<script>
+								function snsLittleOpener(){
+									jQuery('.sns-opener').on('click',function(){
+										jQuery('.sns-little-box').toggleClass('on');
+										return false;
+									});
+								}
+								snsLittleOpener();
+							</script>
+							<a href="#" onclick="print();return false;" title="인쇄하기"><img src="commons/images/basic/n-sns-print.png" alt="인쇄하기"></a>
+						</p>
+					</div>
+				</article>
+
+				<div class="cont-in">
+				<!-- +++++++++++++++++++++++++ contents +++++++++++++++++++++++++ -->
+
+				<div id="privacy">
+						<div class="privacy_wrap">
+							<h3 class="h3_bul2">개인정보처리방침</h3>
+
+							<p class="mgn_b30">이지비즈(egbiz)의 개인정보 처리방침은 현행 「개인정보보호법」에 근거를 두고 있습니다. 관련 법령에 의거한
+									개인정보처리방침을 정하여 이용자 권익 보호에 최선을 다하고 있습니다.</p>
+							<div class="box_type2">
+								<ul class="basic_list2 two-type float_wrap">
+										<li><a href="#tlink01">1.개인정보의 수집 및 이용 목적</a></li>
+										<li><a href="#tlink02">2.수집하는 개인정보 항목 및 수집방법</a></li>
+										<li><a href="#tlink03">3.수집하는 개인정보의 보유 및 이용기간</a></li>
+										<li><a href="#tlink04">4.개인정보의 파기절차 및 방법</a></li>
+										<li><a href="#tlink05">5. 개인정보의 제공 및 공유</a></li>
+										<li><a href="#tlink06">6.개인정보취급 위탁</a></li>
+										<li><a href="#tlink07">7.개인정보 자동 수집 장치의 설치/운영 및 거부에 관한 사항</a></li>
+										<li><a href="#tlink08">8. 개인정보보호를 위한 기술적/관리적 대책</a></li>
+										<li><a href="#tlink09">9.개인정보의 기술적/관리적 보호 대책</a></li>
+										<li><a href="#tlink10">10.이용자 및 법정대리인의 권리와 그 행사방법</a></li>
+										<li><a href="#tlink11">11.부칙</a></li>
+								</ul>
+							</div>
+							<div class="pri_bx">
+								<div class="box">
+									<!--1조-->
+									<dl>
+										<dt id="tlink01" tabindex="0">1.개인정보의 수집 및 이용 목적</dt>
+										<dd class="txt3">개인정보는 생존하는 개인에 관한 정보로서 실명, 주민등록번호 등의 사항으로 당
+											이지비즈 회원 개인을 식별할 수 있는 정보(당해 정보만으로는 특정 개인을 식별할 수 없더라도 다른 정보와 용이하게
+											결합하여 식별할 수 있는 것을 포함)를 말합니다. 당 이지비즈가 수집한 개인정보는 다음의 목적을 위해 활용합니다.</dd>
+										<dd class="txt">● 회원 관리</dd>
+										<dd class="first">회원제 서비스 이용에 따른 본인 확인, 개인 식별, 불량회원의 부정 이용
+											방지와 비인가 사용 방지, 가입 의사 확인, 가입 및 가입횟수 제한, 분쟁 조정을 위한 기록보존, 불만처리 등
+											민원처리, 고지사항 전달</dd>
+										<dd class="txt">● 마케팅 및 광고에 활용</dd>
+										<dd class="first">신규 지원사업(서비스) 개발 및 특화, 인구통계학적 특성에 따른 서비스 제공
+											및 광고게재, 접속 빈도 파악, 회원의 서비스 이용에 대한 통계, 이벤트 등 광고성 정보 전달 (회원님의 개인정보는
+											광고를 의뢰한 개인이나 단체에는 제공되지 않습니다.)</dd>
+									</dl>
+									<!--2조-->
+									<dl>
+										<dt id="tlink02" tabindex="0">2.수집하는 개인정보 항목 및 수집방법</dt>
+										<dd class="txt">● 가. 수집하는 개인정보 항목</dd>
+										<dd class="first">최초 회원가입시 회원식별 및 최적화된 서비스 제공을 위해 아래와 같은 정보를
+											수집합니다.</dd>
+										<dd class="txt3">< 개인회원 가입시 ></dd>
+										<dd class="txt3">
+											<ul>
+												<li>- 필수항목 : 성명, 아이디, 비밀번호, 주민등록번호, 직업, 업종, 전화번호, 이메일, 주소</li>
+												<li>- 선택사항 : 소속(회사, 학교), 부서명(전공), 팩스번호, 휴대폰 번호, 홈페이지</li>
+											</ul>
+										</dd>
+										<dd class="txt3">< 기업회원 가입시 ></dd>
+										<dd class="txt3">
+											<ul>
+												<li>- 필수항목 : 성명, 업체명, 아이디, 비밀번호, 주민등록번호, 사업자등록번호, 업종, 전화, 이메일, 주소</li>
+												<li>- 선택사항 : 기업형태, 업태, 팩스, 핸드폰, 홈페이지, 설립년도, 종업원수, 자산, 자본, 매출, 수출액, 공장주소, 벤처기업여부</li>
+											</ul>
+										</dd>
+										<dd class="first">서비스 이용과정이나 사업 처리과정에서 아래와 같은 정보들이 생성되어 수집될 수	있습니다.</dd>
+										<dd class="txt3">- 서비스 이용기록, 접속로그, 쿠키, 접속IP 정보 기록</dd>
+										<dd class="txt">● 나. 수집방법</dd>
+										<dd class="first">당 이지비즈는 다음과 같은 방법으로 개인정보를 수집합니다.</dd>
+										<dd class="first">홈페이지를 통한 회원가입, 지원사업 신청서, 상담 게시판, 설문 응모, 경품 행사응모</dd>
+									</dl>
+									<!--3조-->
+									<dl>
+										<dt id="tlink03" tabindex="0">3.수집하는 개인정보의 보유 및 이용기간</dt>
+										<dd class="txt3">
+											원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. <br>
+											단,	다음의 정보에 대해서는 아래의 이유로 명시한 기간동안 보존합니다.
+										</dd>
+										<dt>지원사업 신청/선정 관련 보존 개인정보</dt>
+										<dd class="txt3">
+											<ul>
+												<li>- 보존항목 : 회원님께서 제공한 신분정보, 기업정보</li>
+												<li>- 보존근거 : 중복 지원 방지 및 지원이력 보존</li>
+												<li>- 보존기간 : 신분정보 : 5년 / 지원이력 및 기업정보 : 영구</li>
+											</ul>
+										</dd>
+										<dd class="txt">● 웹사이트 방문기록</dd>
+										<dd class="txt3">
+											<ul>
+												<li>- 보존항목 : 서비스 이용기록, 접속로그, 쿠키, 접속IP 정보 기록</li>
+												<li>- 보존근거 : 통신비밀보호법</li>
+												<li>- 보존기간 : 3개월</li>
+											</ul>
+										</dd>
+									</dl>
+									<!--4조-->
+									<dl>
+										<dt id="tlink04" tabindex="0">4.개인정보의 파기절차 및 방법</dt>
+										<dd class="txt3">
+											원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. <br>
+											단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간동안 보존합니다.
+										</dd>
+										<dd class="txt">● 파기절차</dd>
+										<dd class="first">회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 내부 방침 및
+											기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다. 동
+											개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다.</dd>
+										<dd class="txt">● 파기방법</dd>
+										<dd class="first">종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고 전자적
+											파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</dd>
+									</dl>
+									<!--5조-->
+									<dl>
+										<dt id="tlink05" tabindex="0">5.개인정보의 제공 및 공유</dt>
+										<dd class="txt3">원칙적으로 당 이지비즈는 회원님의 개인정보를 수집 및 이용목적에 한해서만
+											이용하며 타인 또는 타기업 · 기관에 공개하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.</dd>
+										<dd class="txt">● 이용자들이 사전에 동의한 경우</dd>
+										<dd class="first">정보수집 또는 정보제공 이전에 회원님께 비즈니스 파트너가 누구인지, 어떤
+											정보가 왜 필요한지, 그리고 언제까지 어떻게 보호/관리되는지 알려드리고 동의를 구하는 절차를 거치게 되며, 회원님께서
+											동의하지 않는 경우에는 추가적인 정보를 수집하거나 비즈니스 파트너와 공유하지 않습니다.</dd>
+									</dl>
+									<!--6조-->
+									<dl>
+										<dd class="txt">● 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라
+											수사기관의 요구가 있는 경우</dd>
+										<dt id="tlink06" tabindex="0">6.개인정보취급 위탁</dt>
+										<dd class="txt3">
+											당 이지비즈는 전문적인 고객지원 및 서비스 제공을 위해 아래와 같이 개인정보 취급 업무를 외부 업체에 위탁하여
+											운영하고 있습니다. <br> 위탁계약 시 개인정보보호의 안전을 기하기 위하여 개인정보보호 관련 지시 엄수,
+												개인정보에 관한 유출금지 및 사고시의 책임부담 등을 명확히 규정하고 위탁계약 내용에 포함되어 있습니다.
+										</dd>
+										<dd class="txt">● 서비스 제공 위탁업체</dd>
+										<dd class="txt">
+											<table cellspacing="0" summary="서비스제공 위탁업체">
+												<colgroup span="1">
+													<col width="150" span="1">
+													<col width="300" span="1">
+													<col width="*" span="1">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="col">수탁업체</th>
+														<th scope="col">위탁업무 내용</th>
+														<th scope="col">개인정보의 보유 및 이용기간</th>
+													</tr>
+													<tr>
+														<td>(주)니트로아이</td>
+														<td>홈페이지 및 시스템 유지보수</td>
+														<td>
+													</tr>
+												</tbody>
+											</table>
+										</dd>
+									</dl>
+									<!--7조-->
+									<dl>
+										<dt id="tlink07" tabindex="0">7.개인정보 자동 수집 장치의 설치·운영 및 거부에 관한 사항</dt>
+										<dd class="txt3">
+											회원님 개개인에게 개인화되고 맞춤화된 서비스를 제공하기 위해서 당 이지비즈는 회원님의 정보를 저장하고 수시로 불러오는
+											'쿠키(cookie)'를 사용합니다. <br> 쿠키는 웹사이트를 운영하는데 이용되는 서버가 사용자의
+												브라우저에게 보내는 조그마한 데이터 꾸러미로 회원님 컴퓨터의 하드디스크에 저장됩니다.
+										</dd>
+										<dd class="txt">● 쿠키의 사용 목적</dd>
+										<dd class="first">회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야를
+											파악 및 자취 추적, 각종 이벤트 참여 정도 및 방문 회수 파악 등을 통한 타겟 마케팅 및 개인 맞춤 서비스 제공</dd>
+										<dd class="txt">● 쿠키 설정 거부 방법</dd>
+										<dd class="first">귀하는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 귀하는
+											웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의
+											저장을 거부할 수도 있습니다.</dd>
+										<dd class="first">
+											설정방법 예(인터넷 익스플로러의 경우) : 웹 브라우저 상단의 도구 > 인터넷 옵션 > 개인정보 <br>
+												단, 쿠키 설치를 거부하였을 경우 로그인이 필요한 일부 서비스의 이용이 어려울 수 있습니다.
+										</dd>
+									</dl>
+									<!--8조-->
+									<dl>
+										<dt id="tlink08" tabindex="0">8.개인정보보호를 위한 기술적/관리적 대책</dt>
+										<dd class="txt">● 기술적인 대책</dd>
+										<dd class="first">회원님의 개인정보는 비밀번호에 의해 보호되며, 파일 및 전송 데이터를
+											암호화하거나 파일 잠금기능(Lock)을 사용하여 중요한 데이터는 별도의 보안기능을 통해 보호되고 있습니다. 당
+											이지비즈는 백신프로그램을 이용하여 컴퓨터바이러스에 의한 피해를 방지하기 위한 조치를 취하고 있습니다. 백신프로그램은
+											주기적으로 업데이트되며 갑작스런 바이러스가 출현될 경우 백신이 나오는 즉시 이를 적용함으로써 개인정보가 침해되는 것을
+											방지하고 있습니다.</dd>
+										<dd class="first">당 이지비즈는 암호알고리즘을 이용하여 네트워크 상의 개인정보를 안전하게 전송할
+											수 있는 보안장치(SSL/TLS)를 채택하고 있습니다. 해킹 등에 의해 귀하의 개인정보가 유출되는 것을 방지하기
+											위하여, 외부로부터의 침입을 차단하는 장치를 이용하고 있으며 주요 서버마다 침입탐지시스템을 설치하여 24시간 침입을
+											감시하고 있습니다.</dd>
+										<dd class="txt">● 관리적인 대책</dd>
+										<dd class="first">위와 같은 노력 이외에 회원님 스스로도 제3자에게 비밀번호 등이 노출되지
+											않도록 주의하셔야 합니다. 특히 비밀번호 등이 공공장소에 설치한 PC를 통해 유출되지 않도록 항상 유의하시기
+											바랍니다. 회원님의 ID와 비밀번호는 반드시 본인만 사용하시고 비밀번호를 자주 바꿔주시는 것이 좋습니다. 당
+											이지비즈는 개인정보 취급직원을 개인정보 관리업무를 수행하는 자 및 업무상 개인정보의 취급이 불가피 한 자로 엄격히
+											제한하고 담당직원에 대한 수시 교육을 통하여 본 정책의 준수를 강조하고 있으며, 감사위원회의 감사를 통하여 본 정책의
+											이행사항 및 담당직원의 준수여부를 확인하여 문제가 발견될 경우 바로 시정조치하고 있습니다.</dd>
+									</dl>
+									<!--9조-->
+									<dl>
+										<dt id="tlink09" tabindex="0">9.이용자 및 법정대리인의 권리와 그 행사방법</dt>
+										<dd class="txt3">이용자 및 법정 대리인은 언제든지 등록되어 있는 자신의 개인정보를 조회하거나
+											수정할 수 있으며 가입해지를 요청할 수도 있습니다. 귀하가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을
+											완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는
+											정정 처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록 하겠습니다. 당 이지비즈는 이용자 혹은 법정
+											대리인의 요청에 의해 해지 또는 삭제된 개인정보는 당 이지비즈가 수집하는 "개인정보의 보유 및 이용기간"에 명시된
+											바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.</dd>
+									</dl>
+									<!--10조-->
+									<dl>
+										<dt id="tlink10" tabindex="0">10.개인정보관리책임자 및 상담·신고</dt>
+										<dd class="txt3">고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 당
+											이지비즈는 개인정보관리책임자를 두고 있습니다. 고객의 개인정보와 관련한 문의사항이 있으시면 아래의 개인정보관리책임자
+											또는 개인정보관리담당자에게 연락 주시기 바랍니다.</dd>
+										<dd class="txt">● 개인정보 관리책임자</dd>
+										<dd class="txt1">- 이름 : 이종덕</dd>
+										<dd class="txt1">- 소속 : 경영관리처</dd>
+										<dd class="txt1">- 연락처 : 031-259-6021</dd>
+										<dd class="txt1">- 팩스 : 031-259-7360</dd>
+										<dd class="txt">● 개인정보 관리담당자</dd>
+										<dd class="txt1">- 이름 : 이기영</dd>
+										<dd class="txt1">- 소속 : 경영정보팀</dd>
+										<dd class="txt1">- 연락처 : 031-259-6056</dd>
+										<dd class="txt1">- 팩스 : 031-259-7360</dd>
+										<dd class="txt">● 개인정보침해에 관한 상담이 필요한 경우에는 개인정보침해신고센터, 대검찰청 인터넷범죄수사센터, 경찰청 사이버테러대응센터 등으로 문의하실 수 있습니다.</dd>
+										<dd>
+											- 개인정보침해신고센터 (전화:118) <a target="_blank" href="https://privacy.kisa.or.kr">http://www.cyberprivacy.or.kr</a>
+										</dd>
+										<dd>
+											- 대검찰청 인터넷범죄수사센터 (전화:02-3480-3600) <a target="_blank" href="http://www.spo.go.kr">http://www.spo.go.kr</a>
+										</dd>
+										<dd>
+											- 경찰청 사이버테러대응센타 (전화:182) <a target="_blank" href="http://cyberbureau.police.go.kr">http://www.ctrc.go.kr</a>
+										</dd>
+									</dl>
+									<!--11조-->
+									<dl>
+										<dt id="tlink11" tabindex="0">11. 부칙</dt>
+										<dd class="txt3">법령.정책 또는 보안기술의 변경에 따라 내용의 추가·삭제 및 수정이 있을 시에는
+											변경사항 시행일의 7일전부터 당 이지비즈 사이트의 공지사항을 통하여 고지합니다.</dd>
+										<dd class="txt">● 이 개인정보취급방침은 2004년 01월 01일부터 적용됩니다.</dd>
+										<dd class="first">개인정보취급방침 변경공고일자 : 2011년 09월 30일</dd>
+										<dd class="first">개인정보취급방침 시행일자 : 2004년 01월 01일</dd>
+									</dl>
+								</div>
+								<!--box-->
+							</div>
+							<!--pri_bx-->
+						</div>
+						<!--privacy_wrap-->
+					</div>
+					<!--errorBox End-->
+
+				<!-- +++++++++++++++++++++++++ contents +++++++++++++++++++++++++ -->
+				</div><!--//cont-in -->
+			</section>
+
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div class="footer_in_wrap">
+			<p class="foot_img"><img src="commons/images/global/foot_img.png" alt="이지비즈"/></p>
+			<div class="copy_box">
+				<ul class="float_wrap">
+					<li><a href="#">
+						<strong>개인정보처리방침</strong>
+					</a></li>
+					<li><a href="#">이메일무단수집거부</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</div><!--//copy_box -->
+			<div class="copy_box2">
+				<address class="item1 float_wrap">(16229)경기도 수원시 영통구 광교로 107  사업자등록번호 : 124-82-08755<br>
+				TEL :  <span class="col_red"> 02-2109-2500</span>  FAX : 02-2109-2599
+				</address>
+				<p class="item2">COPYRIGHT(C) 2018 EGBIZ.OR.KR ALL RIGHTS RESERVED.</p>
+			</div><!--//copy_box2 -->
+
+			<!--
+			<article class="foot_select">
+				<h3 class="hidden_word">관련기관 바로가기</h3>
+				<div class="mgn_b5">
+					<label for="search_f" class="hidden_word">관련기관 바로가기 선택</label>
+					<div class="select_design in_length150">
+
+						<select name="" id="search_f">
+							<option value="" selected="selected">관련기관 바로가기</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+							<option value="http://www.naver.com">네이버</option>
+						</select>
+					</div>
+					<a href="#" class="select_go" onclick="window.open(jQuery('#search_f option:selected').val());" title="새창열림">이동
+					</a>
+				</div>
+
+			</article>
+			-->
+		</div>
+
+
+	</footer>
+	<script>title_copy('이지비즈');// title 출력 부분 </script>
+</body>
+</html>

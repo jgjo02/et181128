@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+
+
+/* =====================
+		mobile 
+========================*/
+
+
+/* 공통 */
+@media screen and (min-width:1px) and (max-width:999px) {
+}
+
+/* 공통 */
+@media screen and (min-width:1px) and (max-width:850px) {
+
+}
+
+/* 모바일 큰메뉴 */
+@media screen and (min-width:769px) and (max-width:999px) {
+
+}
+
+
+/* Big - medium */
+@media screen and (min-width:755px) and (max-width:850px) {
+.main_fav_link li{width: 49.86%;}
+	
+	
+}
+
+/* 모바일용 메뉴 공통 */
+@media screen and (min-width:1px) and (max-width:768px) {
+	.main_fav_link{margin:5px;}
+}
+
+
+/* midium */
+@media screen and (min-width:625px) and (max-width:754px) {
+	.main_fav_link li{width: 49.83%;}
+}
+
+/* midium2 */
+@media screen and (min-width:625px) and (max-width:624px) {
+	.main_fav_link li{width: 49.8%;}
+}
+
+/* small 공통 */
+@media screen and (min-width:1px) and (max-width:560px) {
+	.main_fav_link li{width: 100%;}	
+
+	/*사이트맵*/
+	.sitemap > ul > li{width:47%}
+}
+
+/* small */
+@media screen and (min-width:481px) and (max-width:560px) {
+
+}
+
+/* x-small */
+@media screen and (min-width:1px) and (max-width:480px) {
+
+
+}
+
+/* xx-small */
+
+
+@media screen and (min-width:1px) and (max-width:360px) {
+}
